@@ -1,343 +1,512 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NHL Super Pool</title>
-    <style>
-        :root {
-            --border-color: #34495e;
-            --accent-red: #e0564c;
-            --text-dark: #2c3e50;
-            --bg-details: #f8fafc;
-            --green-arrow: #22c55e;
-            --red-arrow: #ef4444;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NHL Super Pool</title>
+<style>
+:root {
+  --border-color: #34495e;
+  --accent-red: #e0564c;
+  --text-dark: #2c3e50;
+  --bg-details: #f8fafc;
+  --green-arrow: #22c55e;
+  --red-arrow: #ef4444;
+}
 
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-            background: linear-gradient(180deg, #ffffff 0%, #d1d5db 50%, #9ca3af 100%);
-            background-attachment: fixed;
-            color: var(--text-dark); 
-            margin: 0; 
-            padding: 20px 15px; 
-            min-height: 100vh;
-        }
+body { 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+  background: linear-gradient(180deg, #ffffff 0%, #d1d5db 50%, #9ca3af 100%);
+  background-attachment: fixed;
+  color: var(--text-dark); 
+  margin: 0; 
+  padding: 20px 15px; 
+  min-height: 100vh;
+}
 
-        .container { 
-            width: 100%; 
-            max-width: 1100px; 
-            margin: 0 auto; 
-            box-sizing: border-box;
-        }
+.container { 
+  width: 100%; 
+  max-width: 1100px; 
+  margin: 0 auto; 
+  box-sizing: border-box;
+}
 
-        /* En-tête avec Logo et Titre */
-        .header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 35px;
-            width: 100%;
-        }
+/* En-tête avec Logo et Titre */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  width: 100%;
+}
 
-        .brand-block {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 75%;
-            margin: 0 auto;
-        }
+.brand-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
 
-        .hatch-logo {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-            display: block;
-        }
+.hatch-logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
 
-        h1 { 
-            text-align: center; 
-            color: var(--text-dark); 
-            font-size: clamp(1.1rem, 3.2vw, 2rem); 
-            margin: -15px auto 0 auto; 
-            font-weight: 800;
-            width: 75%;
-            white-space: nowrap;
-            position: relative;
-            z-index: 2;
-        }
+h1 { 
+  text-align: center; 
+  color: var(--text-dark); 
+  font-size: clamp(1.1rem, 3.2vw, 2rem); 
+  margin: -15px auto 0 auto; 
+  font-weight: 800;
+  width: 75%;
+  white-space: nowrap;
+  position: relative;
+  z-index: 2;
+}
 
-        .participant-card {
-            margin-bottom: 20px;
-            width: 100%;
-        }
+/* --- BARRE DE RECHERCHE --- */
+.search-bar {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 28px auto;
+  position: relative;
+}
 
-        /* --- PASTILLE UNIQUE PLEINE LARGEUR --- */
-        .main-pill {
-            width: 100%;
-            background-color: #ffffff;
-            border: 4px solid var(--border-color);
-            border-radius: 50px;
-            padding: 10px clamp(14px, 3.5vw, 32px);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-sizing: border-box;
-            min-height: clamp(80px, 11vw, 105px);
-            cursor: pointer;
-            gap: clamp(10px, 2.5vw, 25px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-        }
+.search-bar input {
+  width: 100%;
+  padding: 12px 18px 12px 44px;
+  border: 3px solid var(--border-color);
+  border-radius: 50px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--text-dark);
+  background: #ffffff;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
 
-        /* Largeur fixe pour aligner verticalement les noms des participants */
-        .rank-section {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 6px;
-            flex-shrink: 0;
-            width: clamp(75px, 11vw, 105px);
-        }
+.search-bar input:focus {
+  border-color: var(--accent-red);
+  box-shadow: 0 0 0 3px rgba(224, 86, 76, 0.15);
+}
 
-        .rank-number {
-            font-size: clamp(1.6rem, 4vw, 2.7rem);
-            font-weight: 900;
-            color: var(--border-color);
-            line-height: 1;
-        }
+.search-bar input::placeholder {
+  color: #94a3b8;
+}
 
-        .trend-arrow {
-            font-size: clamp(0.9rem, 2vw, 1.4rem);
-            font-weight: 900;
-            line-height: 1;
-            width: 18px;
-            text-align: center;
-        }
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  pointer-events: none;
+  opacity: 0.55;
+}
 
-        .trend-arrow.up { color: var(--green-arrow); }
-        .trend-arrow.down { color: var(--red-arrow); }
-        .trend-arrow.same { visibility: hidden; } /* Garde l'espace vide pour l'alignement si pas de flèche */
+.no-results {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.05rem;
+  padding: 30px 10px;
+}
 
-        .participant-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            flex-grow: 1;
-        }
+.participant-card {
+  margin-bottom: 20px;
+  width: 100%;
+}
 
-        .participant-name {
-            font-size: clamp(1.15rem, 3vw, 1.85rem);
-            font-weight: 700;
-            color: var(--accent-red);
-            margin-bottom: 6px;
-            line-height: 1.1;
-        }
+/* --- PASTILLE UNIQUE PLEINE LARGEUR --- */
+.main-pill {
+  width: 100%;
+  background-color: #ffffff;
+  border: 4px solid var(--border-color);
+  border-radius: 50px;
+  padding: 10px clamp(14px, 3.5vw, 32px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  min-height: clamp(80px, 11vw, 105px);
+  cursor: pointer;
+  gap: clamp(10px, 2.5vw, 25px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
 
-        .points-breakdown {
-            display: flex;
-            justify-content: flex-start;
-            gap: clamp(12px, 4vw, 45px);
-            width: 100%;
-        }
+/* Largeur fixe pour aligner verticalement les noms des participants */
+.rank-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  flex-shrink: 0;
+  width: clamp(75px, 11vw, 105px);
+}
 
-        .breakdown-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-width: 35px;
-        }
+.rank-number {
+  font-size: clamp(1.6rem, 4vw, 2.7rem);
+  font-weight: 900;
+  color: var(--border-color);
+  line-height: 1;
+}
 
-        .breakdown-label {
-            font-size: clamp(0.72rem, 1.5vw, 1rem);
-            color: var(--border-color);
-            font-weight: 600;
-        }
+.trend-arrow {
+  font-size: clamp(0.9rem, 2vw, 1.4rem);
+  font-weight: 900;
+  line-height: 1;
+  width: 18px;
+  text-align: center;
+}
 
-        .breakdown-value {
-            font-size: clamp(0.8rem, 1.6vw, 1.15rem);
-            color: var(--accent-red);
-            font-weight: 800;
-        }
+.trend-arrow.up { color: var(--green-arrow); }
+.trend-arrow.down { color: var(--red-arrow); }
+.trend-arrow.same { visibility: hidden; }
 
-        /* Section des points totaux agrandie */
-        .total-circle {
-            width: clamp(75px, 11vw, 98px);
-            height: clamp(75px, 11vw, 98px);
-            min-width: clamp(75px, 11vw, 98px);
-            border-radius: 50%;
-            border: 3px solid var(--border-color);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #ffffff;
-            box-sizing: border-box;
-            flex-shrink: 0;
-        }
+.participant-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 0; /* important pour le responsive */
+}
 
-        .total-label {
-            font-size: clamp(0.6rem, 1.2vw, 0.8rem);
-            color: var(--text-dark);
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
+/* Layout horizontal du nom + breakdown quand assez de place */
+.participant-info.wide {
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(16px, 3vw, 40px);
+}
 
-        .total-points {
-            font-size: clamp(1.05rem, 2.2vw, 1.5rem);
-            font-weight: 800;
-            color: var(--accent-red);
-            line-height: 1.1;
-        }
+.participant-info.wide .participant-name {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
 
-        .details {
-            display: none;
-            background: var(--bg-details);
-            border-radius: 16px;
-            padding: 20px;
-            margin-top: 12px;
-            border: 2px solid #cbd5e1;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-        }
+.participant-info.wide .points-breakdown {
+  flex-grow: 1;
+  justify-content: flex-start;
+}
 
-        table { width: 100%; border-collapse: collapse; margin-top: 8px; margin-bottom: 16px; font-size: 0.92rem; }
-        th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #cbd5e1; }
-        th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
-        .section-title { font-weight: 800; color: #0284c7; margin-top: 16px; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.03em; }
-        .badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; background: #e2e8f0; color: #334155; }
+.participant-name {
+  font-size: clamp(1.15rem, 3vw, 1.85rem);
+  font-weight: 700;
+  color: var(--accent-red);
+  margin-bottom: 6px;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-        @media (max-width: 520px) {
-            .main-pill { padding: 8px 12px; }
-            .points-breakdown { gap: 10px; }
-            h1 { margin-top: -10px; }
-        }
-    </style>
+.points-breakdown {
+  display: flex;
+  justify-content: flex-start;
+  gap: clamp(12px, 4vw, 45px);
+  width: 100%;
+}
+
+.breakdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 35px;
+}
+
+.breakdown-label {
+  font-size: clamp(0.72rem, 1.5vw, 1rem);
+  color: var(--border-color);
+  font-weight: 600;
+}
+
+.breakdown-value {
+  font-size: clamp(0.8rem, 1.6vw, 1.15rem);
+  color: var(--accent-red);
+  font-weight: 800;
+}
+
+/* Section des points totaux */
+.total-circle {
+  width: clamp(75px, 11vw, 98px);
+  height: clamp(75px, 11vw, 98px);
+  min-width: clamp(75px, 11vw, 98px);
+  border-radius: 50%;
+  border: 3px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.total-label {
+  font-size: clamp(0.6rem, 1.2vw, 0.8rem);
+  color: var(--text-dark);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.total-points {
+  font-size: clamp(1.05rem, 2.2vw, 1.5rem);
+  font-weight: 800;
+  color: var(--accent-red);
+  line-height: 1.1;
+}
+
+.details {
+  display: none;
+  background: var(--bg-details);
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 12px;
+  border: 2px solid #cbd5e1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+table { width: 100%; border-collapse: collapse; margin-top: 8px; margin-bottom: 16px; font-size: 0.92rem; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #cbd5e1; }
+th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
+.section-title { font-weight: 800; color: #0284c7; margin-top: 16px; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.03em; }
+.badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; background: #e2e8f0; color: #334155; }
+
+@media (max-width: 520px) {
+  .main-pill { padding: 8px 12px; }
+  .points-breakdown { gap: 10px; }
+  h1 { margin-top: -10px; }
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="brand-block">
-                <img src="./images/hatch-logo.png" alt="Hatch Logo" class="hatch-logo" onerror="this.style.display='none'">
-                <h1>🏒 NHL Super Pool 🥅</h1>
-            </div>
-        </header>
-
-        <div id="leaderboard">Chargement du classement...</div>
+<div class="container">
+  <header class="header">
+    <div class="brand-block">
+      <img src="./images/hatch-logo.png" alt="Hatch Logo" class="hatch-logo" onerror="this.style.display='none'">
+      <h1>🏒 NHL Super Pool 🥅</h1>
     </div>
+  </header>
 
-    <script>
-        async function loadPoolData() {
-            try {
-                const res = await fetch('data.json?t=' + new Date().getTime());
-                const data = await res.json();
-                const container = document.getElementById('leaderboard');
-                container.innerHTML = '';
+  <!-- Barre de recherche -->
+  <div class="search-bar">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="Rechercher un participant..." autocomplete="off">
+  </div>
 
-                data.leaderboard.forEach((p, index) => {
-                    const card = document.createElement('div');
-                    card.className = 'participant-card';
-                    
-                    let skatersHtml = p.skaters.map(s => {
-                        const displayPos = (s.position === 'D') ? 'D' : 'A';
-                        return `<tr>
-                            <td><b>${s.name}</b> <span class="badge">${displayPos}</span></td>
-                            <td>${s.goals || 0} B, ${s.assists || 0} P</td>
-                            <td><b>${s.points || 0} pts</b></td>
-                        </tr>`;
-                    }).join('');
+  <div id="leaderboard">Chargement du classement...</div>
+</div>
 
-                    let goaliesHtml = p.goalies.map(g => 
-                        `<tr>
-                            <td><b>${g.name}</b> <span class="badge">G</span></td>
-                            <td>${g.wins || 0} V, ${g.shutouts || 0} BL, ${g.otLosses || 0} DP</td>
-                            <td><b>${g.points || 0} pts</b></td>
-                        </tr>`
-                    ).join('');
+<script>
+let allParticipants = []; // stocke les données brutes pour le filtre
 
-                    let teamsHtml = p.teams.map(t => 
-                        `<tr>
-                            <td><b>${t.name}</b> (${t.abbrev || ''})</td>
-                            <td>${t.reg_wins || 0} VR, ${t.ot_wins || 0} VP, ${t.ot_losses || 0} DP</td>
-                            <td><b>${t.points || 0} pts</b></td>
-                        </tr>`
-                    ).join('');
+async function loadPoolData() {
+  try {
+    const res = await fetch('data.json?t=' + new Date().getTime());
+    const data = await res.json();
+    
+    // Calcul du classement 1224 (dense ranking)
+    allParticipants = compute1224Ranking(data.leaderboard);
+    
+    renderLeaderboard(allParticipants);
+    
+    // Écouteur de recherche
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      if (!query) {
+        renderLeaderboard(allParticipants);
+        return;
+      }
+      const filtered = allParticipants.filter(p => 
+        p.name.toLowerCase().includes(query)
+      );
+      renderLeaderboard(filtered);
+    });
+    
+  } catch (e) {
+    console.error(e);
+    document.getElementById('leaderboard').innerHTML = 
+      "<p style='text-align:center; color:#ef4444;'>Erreur lors du chargement des données.</p>";
+  }
+}
 
-                    let trendHtml = '<span class="trend-arrow same"></span>';
-                    if (p.trend === 'up') {
-                        trendHtml = '<span class="trend-arrow up" title="En hausse par rapport à la veille">▲</span>';
-                    } else if (p.trend === 'down') {
-                        trendHtml = '<span class="trend-arrow down" title="En baisse par rapport à la veille">▼</span>';
-                    }
+/**
+ * Classement 1224 (également appelé dense ranking / "modified competition ranking")
+ * Exemple : scores 100, 90, 90, 80 → rangs 1, 2, 2, 4
+ */
+function compute1224Ranking(leaderboard) {
+  // On suppose déjà trié par total_points décroissant
+  let result = [];
+  let currentRank = 1;
+  
+  for (let i = 0; i < leaderboard.length; i++) {
+    if (i > 0 && leaderboard[i].total_points < leaderboard[i - 1].total_points) {
+      // On saute autant de places que de personnes à égalité précédentes
+      currentRank = i + 1;
+    }
+    result.push({
+      ...leaderboard[i],
+      rank: currentRank
+    });
+  }
+  return result;
+}
 
-                    card.innerHTML = `
-                        <div class="main-pill" onclick="toggleDetails(${index})">
-                            <div class="rank-section">
-                                <span class="rank-number">#${index + 1}</span>
-                                ${trendHtml}
-                            </div>
-                            
-                            <div class="participant-info">
-                                <div class="participant-name">${p.name}</div>
-                                <div class="points-breakdown">
-                                    <div class="breakdown-item">
-                                        <span class="breakdown-label">Att</span>
-                                        <span class="breakdown-value">${p.att_pts || 0}</span>
-                                    </div>
-                                    <div class="breakdown-item">
-                                        <span class="breakdown-label">Def</span>
-                                        <span class="breakdown-value">${p.def_pts || 0}</span>
-                                    </div>
-                                    <div class="breakdown-item">
-                                        <span class="breakdown-label">Goaler</span>
-                                        <span class="breakdown-value">${p.goalie_pts || 0}</span>
-                                    </div>
-                                    <div class="breakdown-item">
-                                        <span class="breakdown-label">Equipe</span>
-                                        <span class="breakdown-value">${p.team_pts || 0}</span>
-                                    </div>
-                                </div>
-                            </div>
+function renderLeaderboard(list) {
+  const container = document.getElementById('leaderboard');
+  container.innerHTML = '';
 
-                            <div class="total-circle">
-                                <span class="total-label">TOTAL</span>
-                                <span class="total-points">${p.total_points || 0} pts</span>
-                            </div>
-                        </div>
+  if (list.length === 0) {
+    container.innerHTML = '<p class="no-results">Aucun participant trouvé.</p>';
+    return;
+  }
 
-                        <div class="details" id="details-${index}">
-                            <div class="section-title">Attaquants & Défenseurs</div>
-                            <table>
-                                <thead><tr><th>Joueur</th><th>Statistiques</th><th>Points</th></tr></thead>
-                                <tbody>${skatersHtml}</tbody>
-                            </table>
+  list.forEach((p, index) => {
+    const card = document.createElement('div');
+    card.className = 'participant-card';
 
-                            <div class="section-title">Gardiens</div>
-                            <table>
-                                <thead><tr><th>Gardien</th><th>Statistiques</th><th>Points</th></tr></thead>
-                                <tbody>${goaliesHtml}</tbody>
-                            </table>
+    let skatersHtml = p.skaters.map(s => {
+      const displayPos = (s.position === 'D') ? 'D' : 'A';
+      return `<tr>
+        <td><b>\( {s.name}</b> <span class="badge"> \){displayPos}</span></td>
+        <td>${s.goals || 0} B, ${s.assists || 0} P</td>
+        <td><b>${s.points || 0} pts</b></td>
+      </tr>`;
+    }).join('');
 
-                            <div class="section-title">Équipes</div>
-                            <table>
-                                <thead><tr><th>Équipe</th><th>Statistiques</th><th>Points</th></tr></thead>
-                                <tbody>${teamsHtml}</tbody>
-                            </table>
-                        </div>
-                    `;
-                    container.appendChild(card);
-                });
-            } catch (e) {
-                console.error(e);
-                document.getElementById('leaderboard').innerHTML = "<p style='text-align:center; color:#ef4444;'>Erreur lors du chargement des données.</p>";
-            }
-        }
+    let goaliesHtml = p.goalies.map(g => 
+      `<tr>
+        <td><b>${g.name}</b> <span class="badge">G</span></td>
+        <td>${g.wins || 0} V, ${g.shutouts || 0} BL, ${g.otLosses || 0} DP</td>
+        <td><b>${g.points || 0} pts</b></td>
+      </tr>`
+    ).join('');
 
-        function toggleDetails(index) {
-            const el = document.getElementById(`details-${index}`);
-            el.style.display = (el.style.display === 'block') ? 'none' : 'block';
-        }
+    let teamsHtml = p.teams.map(t => 
+      `<tr>
+        <td><b>\( {t.name}</b> ( \){t.abbrev || ''})</td>
+        <td>${t.reg_wins || 0} VR, ${t.ot_wins || 0} VP, ${t.ot_losses || 0} DP</td>
+        <td><b>${t.points || 0} pts</b></td>
+      </tr>`
+    ).join('');
 
-        loadPoolData();
-    </script>
+    let trendHtml = '<span class="trend-arrow same"></span>';
+    if (p.trend === 'up') {
+      trendHtml = '<span class="trend-arrow up" title="En hausse par rapport à la veille">▲</span>';
+    } else if (p.trend === 'down') {
+      trendHtml = '<span class="trend-arrow down" title="En baisse par rapport à la veille">▼</span>';
+    }
+
+    // On utilise l'index original pour l'id des détails (pour le toggle)
+    const detailId = p._originalIndex !== undefined ? p._originalIndex : index;
+
+    card.innerHTML = `
+      <div class="main-pill" onclick="toggleDetails(${detailId})">
+        <div class="rank-section">
+          <span class="rank-number">#${p.rank}</span>
+          ${trendHtml}
+        </div>
+
+        <div class="participant-info" id="info-${detailId}">
+          <div class="participant-name">${p.name}</div>
+          <div class="points-breakdown">
+            <div class="breakdown-item">
+              <span class="breakdown-label">Att</span>
+              <span class="breakdown-value">${p.att_pts || 0}</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Def</span>
+              <span class="breakdown-value">${p.def_pts || 0}</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Goaler</span>
+              <span class="breakdown-value">${p.goalie_pts || 0}</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-label">Equipe</span>
+              <span class="breakdown-value">${p.team_pts || 0}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="total-circle">
+          <span class="total-label">TOTAL</span>
+          <span class="total-points">${p.total_points || 0} pts</span>
+        </div>
+      </div>
+
+      <div class="details" id="details-${detailId}">
+        <div class="section-title">Attaquants & Défenseurs</div>
+        <table>
+          <thead><tr><th>Joueur</th><th>Statistiques</th><th>Points</th></tr></thead>
+          <tbody>${skatersHtml}</tbody>
+        </table>
+
+        <div class="section-title">Gardiens</div>
+        <table>
+          <thead><tr><th>Gardien</th><th>Statistiques</th><th>Points</th></tr></thead>
+          <tbody>${goaliesHtml}</tbody>
+        </table>
+
+        <div class="section-title">Équipes</div>
+        <table>
+          <thead><tr><th>Équipe</th><th>Statistiques</th><th>Points</th></tr></thead>
+          <tbody>${teamsHtml}</tbody>
+        </table>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+
+  // Appliquer le layout horizontal/vertical selon la largeur disponible
+  applyResponsiveLayout();
+}
+
+/**
+ * Décide si le breakdown de points s'affiche à droite du nom ou en dessous
+ * selon la largeur réelle de chaque pastille.
+ */
+function applyResponsiveLayout() {
+  document.querySelectorAll('.participant-info').forEach(info => {
+    // On force d'abord le mode colonne pour mesurer correctement
+    info.classList.remove('wide');
+    
+    const nameEl = info.querySelector('.participant-name');
+    const breakdownEl = info.querySelector('.points-breakdown');
+    
+    if (!nameEl || !breakdownEl) return;
+    
+    // Largeur disponible dans la zone info
+    const availableWidth = info.clientWidth;
+    
+    // Largeur nécessaire si on met nom + breakdown côte à côte
+    // (on utilise scrollWidth pour avoir la largeur réelle du contenu)
+    const nameWidth = nameEl.scrollWidth;
+    const breakdownWidth = breakdownEl.scrollWidth;
+    const neededWidth = nameWidth + breakdownWidth + 40; // + gap
+    
+    if (neededWidth < availableWidth) {
+      info.classList.add('wide');
+    }
+  });
+}
+
+// Recalculer le layout au redimensionnement
+window.addEventListener('resize', () => {
+  applyResponsiveLayout();
+});
+
+function toggleDetails(index) {
+  const el = document.getElementById(`details-${index}`);
+  if (el) {
+    el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+  }
+}
+
+loadPoolData();
+</script>
 </body>
 </html>
