@@ -60,7 +60,7 @@ h1 {
   text-align: center; 
   color: var(--text-dark); 
   font-size: clamp(1.1rem, 3.2vw, 2rem); 
-  margin: -38px auto 0 auto;   /* rapproché fortement du logo */
+  margin: -38px auto 0 auto;
   font-weight: 800;
   width: 75%;
   white-space: nowrap;
@@ -138,7 +138,6 @@ h1 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
-/* Largeur fixe pour aligner verticalement les noms des participants */
 .rank-section {
   display: flex;
   align-items: center;
@@ -157,7 +156,6 @@ h1 {
   position: relative;
 }
 
-/* Couronne pour le #1 – un peu plus d’espace au-dessus du numéro */
 .crown {
   position: absolute;
   top: -0.72em;
@@ -189,7 +187,6 @@ h1 {
   min-width: 0;
 }
 
-/* Layout horizontal du nom + breakdown quand assez de place */
 .participant-info.wide {
   flex-direction: row;
   align-items: center;
@@ -243,7 +240,6 @@ h1 {
   font-weight: 800;
 }
 
-/* Section des points totaux */
 .total-circle {
   width: clamp(75px, 11vw, 98px);
   height: clamp(75px, 11vw, 98px);
@@ -292,7 +288,7 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 @media (max-width: 520px) {
   .main-pill { padding: 8px 12px; }
   .points-breakdown { gap: 10px; }
-  h1 { margin-top: -28px; }   /* un peu moins agressif sur mobile */
+  h1 { margin-top: -28px; }
 }
 </style>
 </head>
@@ -305,7 +301,6 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
     </div>
   </header>
 
-  <!-- Barre de recherche -->
   <div class="search-bar">
     <span class="search-icon">🔍</span>
     <input type="text" id="searchInput" placeholder="Rechercher un participant..." autocomplete="off">
@@ -322,12 +317,9 @@ async function loadPoolData() {
     const res = await fetch('data.json?t=' + new Date().getTime());
     const data = await res.json();
     
-    // Classement 1224
     allParticipants = compute1224Ranking(data.leaderboard);
-    
     renderLeaderboard(allParticipants);
     
-    // Filtre de recherche
     document.getElementById('searchInput').addEventListener('input', (e) => {
       const query = e.target.value.trim().toLowerCase();
       if (!query) {
@@ -347,10 +339,6 @@ async function loadPoolData() {
   }
 }
 
-/**
- * Classement 1224 (modified competition ranking)
- * Exemple : 100, 90, 90, 80 → rangs 1, 2, 2, 4
- */
 function compute1224Ranking(leaderboard) {
   let result = [];
   let currentRank = 1;
@@ -380,30 +368,32 @@ function renderLeaderboard(list) {
     const card = document.createElement('div');
     card.className = 'participant-card';
 
+    // ===== CORRECTION ICI =====
     let skatersHtml = p.skaters.map(s => {
       const displayPos = (s.position === 'D') ? 'D' : 'A';
-      return `<tr>
-        <td><b>\( {s.name}</b> <span class="badge"> \){displayPos}</span></td>
-        <td>${s.goals || 0} B, ${s.assists || 0} P</td>
-        <td><b>${s.points || 0} pts</b></td>
-      </tr>`;
+      return '<tr>' +
+        '<td><b>' + (s.name || '') + '</b> <span class="badge">' + displayPos + '</span></td>' +
+        '<td>' + (s.goals || 0) + ' B, ' + (s.assists || 0) + ' P</td>' +
+        '<td><b>' + (s.points || 0) + ' pts</b></td>' +
+        '</tr>';
     }).join('');
 
-    let goaliesHtml = p.goalies.map(g => 
-      `<tr>
-        <td><b>${g.name}</b> <span class="badge">G</span></td>
-        <td>${g.wins || 0} V, ${g.shutouts || 0} BL, ${g.otLosses || 0} DP</td>
-        <td><b>${g.points || 0} pts</b></td>
-      </tr>`
-    ).join('');
+    let goaliesHtml = p.goalies.map(g => {
+      return '<tr>' +
+        '<td><b>' + (g.name || '') + '</b> <span class="badge">G</span></td>' +
+        '<td>' + (g.wins || 0) + ' V, ' + (g.shutouts || 0) + ' BL, ' + (g.otLosses || 0) + ' DP</td>' +
+        '<td><b>' + (g.points || 0) + ' pts</b></td>' +
+        '</tr>';
+    }).join('');
 
-    let teamsHtml = p.teams.map(t => 
-      `<tr>
-        <td><b>\( {t.name}</b> ( \){t.abbrev || ''})</td>
-        <td>${t.reg_wins || 0} VR, ${t.ot_wins || 0} VP, ${t.ot_losses || 0} DP</td>
-        <td><b>${t.points || 0} pts</b></td>
-      </tr>`
-    ).join('');
+    let teamsHtml = p.teams.map(t => {
+      return '<tr>' +
+        '<td><b>' + (t.name || '') + '</b> (' + (t.abbrev || '') + ')</td>' +
+        '<td>' + (t.reg_wins || 0) + ' VR, ' + (t.ot_wins || 0) + ' VP, ' + (t.ot_losses || 0) + ' DP</td>' +
+        '<td><b>' + (t.points || 0) + ' pts</b></td>' +
+        '</tr>';
+    }).join('');
+    // ==========================
 
     let trendHtml = '<span class="trend-arrow same"></span>';
     if (p.trend === 'up') {
@@ -412,79 +402,73 @@ function renderLeaderboard(list) {
       trendHtml = '<span class="trend-arrow down" title="En baisse par rapport à la veille">▼</span>';
     }
 
-    const detailId = p._originalIndex !== undefined ? p._originalIndex : index;
-
-    // Couronne uniquement pour le rang 1
+    const detailId = index;
     const crownHtml = p.rank === 1 ? '<span class="crown">👑</span>' : '';
 
-    card.innerHTML = `
-      <div class="main-pill" onclick="toggleDetails(${detailId})">
-        <div class="rank-section">
-          <span class="rank-number">
-            ${crownHtml}
-            #${p.rank}
-          </span>
-          ${trendHtml}
-        </div>
+    card.innerHTML = 
+      '<div class="main-pill" onclick="toggleDetails(' + detailId + ')">' +
+        '<div class="rank-section">' +
+          '<span class="rank-number">' +
+            crownHtml +
+            '#' + p.rank +
+          '</span>' +
+          trendHtml +
+        '</div>' +
 
-        <div class="participant-info" id="info-${detailId}">
-          <div class="participant-name">${p.name}</div>
-          <div class="points-breakdown">
-            <div class="breakdown-item">
-              <span class="breakdown-label">Att</span>
-              <span class="breakdown-value">${p.att_pts || 0}</span>
-            </div>
-            <div class="breakdown-item">
-              <span class="breakdown-label">Def</span>
-              <span class="breakdown-value">${p.def_pts || 0}</span>
-            </div>
-            <div class="breakdown-item">
-              <span class="breakdown-label">Goaler</span>
-              <span class="breakdown-value">${p.goalie_pts || 0}</span>
-            </div>
-            <div class="breakdown-item">
-              <span class="breakdown-label">Equipe</span>
-              <span class="breakdown-value">${p.team_pts || 0}</span>
-            </div>
-          </div>
-        </div>
+        '<div class="participant-info" id="info-' + detailId + '">' +
+          '<div class="participant-name">' + p.name + '</div>' +
+          '<div class="points-breakdown">' +
+            '<div class="breakdown-item">' +
+              '<span class="breakdown-label">Att</span>' +
+              '<span class="breakdown-value">' + (p.att_pts || 0) + '</span>' +
+            '</div>' +
+            '<div class="breakdown-item">' +
+              '<span class="breakdown-label">Def</span>' +
+              '<span class="breakdown-value">' + (p.def_pts || 0) + '</span>' +
+            '</div>' +
+            '<div class="breakdown-item">' +
+              '<span class="breakdown-label">Goaler</span>' +
+              '<span class="breakdown-value">' + (p.goalie_pts || 0) + '</span>' +
+            '</div>' +
+            '<div class="breakdown-item">' +
+              '<span class="breakdown-label">Equipe</span>' +
+              '<span class="breakdown-value">' + (p.team_pts || 0) + '</span>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
 
-        <div class="total-circle">
-          <span class="total-label">TOTAL</span>
-          <span class="total-points">${p.total_points || 0} pts</span>
-        </div>
-      </div>
+        '<div class="total-circle">' +
+          '<span class="total-label">TOTAL</span>' +
+          '<span class="total-points">' + (p.total_points || 0) + ' pts</span>' +
+        '</div>' +
+      '</div>' +
 
-      <div class="details" id="details-${detailId}">
-        <div class="section-title">Attaquants & Défenseurs</div>
-        <table>
-          <thead><tr><th>Joueur</th><th>Statistiques</th><th>Points</th></tr></thead>
-          <tbody>${skatersHtml}</tbody>
-        </table>
+      '<div class="details" id="details-' + detailId + '">' +
+        '<div class="section-title">Attaquants & Défenseurs</div>' +
+        '<table>' +
+          '<thead><tr><th>Joueur</th><th>Statistiques</th><th>Points</th></tr></thead>' +
+          '<tbody>' + skatersHtml + '</tbody>' +
+        '</table>' +
 
-        <div class="section-title">Gardiens</div>
-        <table>
-          <thead><tr><th>Gardien</th><th>Statistiques</th><th>Points</th></tr></thead>
-          <tbody>${goaliesHtml}</tbody>
-        </table>
+        '<div class="section-title">Gardiens</div>' +
+        '<table>' +
+          '<thead><tr><th>Gardien</th><th>Statistiques</th><th>Points</th></tr></thead>' +
+          '<tbody>' + goaliesHtml + '</tbody>' +
+        '</table>' +
 
-        <div class="section-title">Équipes</div>
-        <table>
-          <thead><tr><th>Équipe</th><th>Statistiques</th><th>Points</th></tr></thead>
-          <tbody>${teamsHtml}</tbody>
-        </table>
-      </div>
-    `;
+        '<div class="section-title">Équipes</div>' +
+        '<table>' +
+          '<thead><tr><th>Équipe</th><th>Statistiques</th><th>Points</th></tr></thead>' +
+          '<tbody>' + teamsHtml + '</tbody>' +
+        '</table>' +
+      '</div>';
+
     container.appendChild(card);
   });
 
   applyResponsiveLayout();
 }
 
-/**
- * Affiche le breakdown à droite du nom s’il y a assez de place,
- * sinon le laisse en dessous.
- */
 function applyResponsiveLayout() {
   document.querySelectorAll('.participant-info').forEach(info => {
     info.classList.remove('wide');
@@ -510,7 +494,7 @@ window.addEventListener('resize', () => {
 });
 
 function toggleDetails(index) {
-  const el = document.getElementById(`details-${index}`);
+  const el = document.getElementById('details-' + index);
   if (el) {
     el.style.display = (el.style.display === 'block') ? 'none' : 'block';
   }
