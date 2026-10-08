@@ -32,7 +32,7 @@ body {
   padding: 0 15px 20px 15px;
 }
 
-/* ===== ZONE STICKY (header + recherche) ===== */
+/* ===== ZONE STICKY ===== */
 .sticky-top {
   position: sticky;
   top: 0;
@@ -44,7 +44,6 @@ body {
   box-shadow: 0 1px 8px rgba(0,0,0,0.04);
 }
 
-/* En-tête avec Logo et Titre – version compacte */
 .header {
   display: flex;
   flex-direction: column;
@@ -82,17 +81,14 @@ h1 {
   z-index: 2;
 }
 
-/* Texte de dernière mise à jour (entre titre et recherche) */
 .last-update {
   text-align: center;
   font-size: 0.68rem;
   color: #9ca3af;
   margin: 2px 0 6px 0;
   font-weight: 500;
-  letter-spacing: 0.01em;
 }
 
-/* --- BARRE DE RECHERCHE --- */
 .search-bar {
   width: 100%;
   max-width: 380px;
@@ -111,7 +107,6 @@ h1 {
   background: #ffffff;
   box-sizing: border-box;
   outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .search-bar input:focus {
@@ -133,14 +128,12 @@ h1 {
   opacity: 0.55;
 }
 
-/* Texte d'aide sous la barre de recherche */
 .search-hint {
   text-align: center;
   font-size: 0.72rem;
   color: #9ca3af;
   margin: 0 0 2px 0;
   font-weight: 500;
-  letter-spacing: 0.01em;
 }
 
 .no-results {
@@ -151,39 +144,39 @@ h1 {
 }
 
 .participant-card {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   width: 100%;
 }
 
-/* --- PASTILLE UNIQUE PLEINE LARGEUR --- */
+/* ===== PASTILLE – hauteur réduite ===== */
 .main-pill {
   width: 100%;
   background-color: #ffffff;
-  border: 4px solid var(--border-color);
+  border: 3.5px solid var(--border-color);
   border-radius: 50px;
-  padding: 10px clamp(14px, 3.5vw, 32px);
+  padding: 7px clamp(12px, 3vw, 28px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  min-height: clamp(80px, 11vw, 105px);
+  min-height: 68px;                 /* ← hauteur réduite */
   cursor: pointer;
-  gap: clamp(10px, 2.5vw, 25px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  gap: clamp(8px, 2vw, 20px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
 }
 
 .rank-section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 6px;
+  gap: 5px;
   flex-shrink: 0;
-  width: clamp(75px, 11vw, 105px);
+  width: clamp(68px, 10vw, 95px);
   position: relative;
 }
 
 .rank-number {
-  font-size: clamp(1.6rem, 4vw, 2.7rem);
+  font-size: clamp(1.4rem, 3.5vw, 2.3rem);
   font-weight: 900;
   color: var(--border-color);
   line-height: 1;
@@ -202,10 +195,10 @@ h1 {
 }
 
 .trend-arrow {
-  font-size: clamp(0.9rem, 2vw, 1.4rem);
+  font-size: clamp(0.85rem, 1.8vw, 1.25rem);
   font-weight: 900;
   line-height: 1;
-  width: 18px;
+  width: 16px;
   text-align: center;
 }
 
@@ -213,6 +206,7 @@ h1 {
 .trend-arrow.down { color: var(--red-arrow); }
 .trend-arrow.same { visibility: hidden; }
 
+/* === LAYOUT NOM + BREAKDOWN === */
 .participant-info {
   display: flex;
   flex-direction: column;
@@ -224,7 +218,7 @@ h1 {
 .participant-info.wide {
   flex-direction: row;
   align-items: center;
-  gap: clamp(16px, 3vw, 40px);
+  gap: clamp(16px, 2.8vw, 32px);
 }
 
 .participant-info.wide .participant-name {
@@ -238,11 +232,11 @@ h1 {
 }
 
 .participant-name {
-  font-size: clamp(1.15rem, 3vw, 1.85rem);
+  font-size: clamp(1.05rem, 2.7vw, 1.65rem);
   font-weight: 700;
   color: var(--accent-red);
-  margin-bottom: 6px;
-  line-height: 1.1;
+  margin-bottom: 3px;
+  line-height: 1.15;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -251,7 +245,7 @@ h1 {
 .points-breakdown {
   display: flex;
   justify-content: flex-start;
-  gap: clamp(12px, 4vw, 45px);
+  gap: clamp(10px, 3.5vw, 36px);
   width: 100%;
 }
 
@@ -259,27 +253,27 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 35px;
+  min-width: 32px;
 }
 
 .breakdown-label {
-  font-size: clamp(0.72rem, 1.5vw, 1rem);
+  font-size: clamp(0.68rem, 1.4vw, 0.92rem);
   color: var(--border-color);
   font-weight: 600;
 }
 
 .breakdown-value {
-  font-size: clamp(0.8rem, 1.6vw, 1.15rem);
+  font-size: clamp(0.75rem, 1.5vw, 1.05rem);
   color: var(--accent-red);
   font-weight: 800;
 }
 
 .total-circle {
-  width: clamp(75px, 11vw, 98px);
-  height: clamp(75px, 11vw, 98px);
-  min-width: clamp(75px, 11vw, 98px);
+  width: clamp(64px, 9.5vw, 86px);
+  height: clamp(64px, 9.5vw, 86px);
+  min-width: clamp(64px, 9.5vw, 86px);
   border-radius: 50%;
-  border: 3px solid var(--border-color);
+  border: 2.5px solid var(--border-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,14 +284,14 @@ h1 {
 }
 
 .total-label {
-  font-size: clamp(0.6rem, 1.2vw, 0.8rem);
+  font-size: clamp(0.55rem, 1.1vw, 0.72rem);
   color: var(--text-dark);
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 
 .total-points {
-  font-size: clamp(1.05rem, 2.2vw, 1.5rem);
+  font-size: clamp(0.95rem, 2vw, 1.3rem);
   font-weight: 800;
   color: var(--accent-red);
   line-height: 1.1;
@@ -307,21 +301,21 @@ h1 {
   display: none;
   background: var(--bg-details);
   border-radius: 16px;
-  padding: 20px;
-  margin-top: 12px;
+  padding: 18px;
+  margin-top: 10px;
   border: 2px solid #cbd5e1;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
-table { width: 100%; border-collapse: collapse; margin-top: 8px; margin-bottom: 16px; font-size: 0.92rem; }
-th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #cbd5e1; }
-th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
-.section-title { font-weight: 800; color: #0284c7; margin-top: 16px; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.03em; }
-.badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; background: #e2e8f0; color: #334155; }
+table { width: 100%; border-collapse: collapse; margin-top: 6px; margin-bottom: 14px; font-size: 0.9rem; }
+th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid #cbd5e1; }
+th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.05em; }
+.section-title { font-weight: 800; color: #0284c7; margin-top: 12px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.03em; }
+.badge { display: inline-block; padding: 2px 5px; border-radius: 4px; font-size: 0.72rem; font-weight: bold; background: #e2e8f0; color: #334155; }
 
 @media (max-width: 520px) {
-  .main-pill { padding: 8px 12px; }
-  .points-breakdown { gap: 10px; }
+  .main-pill { padding: 6px 10px; min-height: 62px; }
+  .points-breakdown { gap: 8px; }
   h1 { margin-top: -16px; }
   .brand-block { width: 65%; }
   .sticky-top { padding: 6px 12px 6px 12px; }
@@ -331,7 +325,6 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 <body>
 <div class="container">
 
-  <!-- Zone sticky : logo + titre + dernière MAJ + recherche + hint -->
   <div class="sticky-top">
     <header class="header">
       <div class="brand-block">
@@ -340,7 +333,6 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
       </div>
     </header>
 
-    <!-- Texte de dernière mise à jour -->
     <p class="last-update" id="lastUpdate">Mise à jour: —</p>
 
     <div class="search-bar">
@@ -361,7 +353,6 @@ async function loadPoolData() {
     const res = await fetch('data.json?t=' + new Date().getTime());
     const data = await res.json();
     
-    // Afficher la date de dernière mise à jour
     displayLastUpdate(data.updated_at);
 
     allParticipants = compute1224Ranking(data.leaderboard);
@@ -386,21 +377,16 @@ async function loadPoolData() {
   }
 }
 
-/**
- * Affiche la date de dernière mise à jour au format français
- * Exemple : "Mise à jour: 8 octobre 05h00"
- */
 function displayLastUpdate(isoString) {
   const el = document.getElementById('lastUpdate');
   if (!isoString) {
     el.textContent = 'Mise à jour: —';
     return;
   }
-
   try {
     const date = new Date(isoString);
     const options = { day: 'numeric', month: 'long' };
-    const dateStr = date.toLocaleDateString('fr-CA', options); // "8 octobre"
+    const dateStr = date.toLocaleDateString('fr-CA', options);
     const hours = String(date.getHours()).padStart(2, '0');
     const minutes = String(date.getMinutes()).padStart(2, '0');
     el.textContent = `Mise à jour: ${dateStr} \( {hours}h \){minutes}`;
@@ -412,15 +398,11 @@ function displayLastUpdate(isoString) {
 function compute1224Ranking(leaderboard) {
   let result = [];
   let currentRank = 1;
-  
   for (let i = 0; i < leaderboard.length; i++) {
     if (i > 0 && leaderboard[i].total_points < leaderboard[i - 1].total_points) {
       currentRank = i + 1;
     }
-    result.push({
-      ...leaderboard[i],
-      rank: currentRank
-    });
+    result.push({ ...leaderboard[i], rank: currentRank });
   }
   return result;
 }
@@ -465,9 +447,9 @@ function renderLeaderboard(list) {
 
     let trendHtml = '<span class="trend-arrow same"></span>';
     if (p.trend === 'up') {
-      trendHtml = '<span class="trend-arrow up" title="En hausse par rapport à la veille">▲</span>';
+      trendHtml = '<span class="trend-arrow up" title="En hausse">▲</span>';
     } else if (p.trend === 'down') {
-      trendHtml = '<span class="trend-arrow down" title="En baisse par rapport à la veille">▼</span>';
+      trendHtml = '<span class="trend-arrow down" title="En baisse">▼</span>';
     }
 
     const detailId = index;
@@ -476,89 +458,70 @@ function renderLeaderboard(list) {
     card.innerHTML = 
       '<div class="main-pill" onclick="toggleDetails(' + detailId + ')">' +
         '<div class="rank-section">' +
-          '<span class="rank-number">' +
-            crownHtml +
-            '#' + p.rank +
-          '</span>' +
+          '<span class="rank-number">' + crownHtml + '#' + p.rank + '</span>' +
           trendHtml +
         '</div>' +
-
         '<div class="participant-info" id="info-' + detailId + '">' +
           '<div class="participant-name">' + p.name + '</div>' +
           '<div class="points-breakdown">' +
-            '<div class="breakdown-item">' +
-              '<span class="breakdown-label">Att</span>' +
-              '<span class="breakdown-value">' + (p.att_pts || 0) + '</span>' +
-            '</div>' +
-            '<div class="breakdown-item">' +
-              '<span class="breakdown-label">Def</span>' +
-              '<span class="breakdown-value">' + (p.def_pts || 0) + '</span>' +
-            '</div>' +
-            '<div class="breakdown-item">' +
-              '<span class="breakdown-label">Goaler</span>' +
-              '<span class="breakdown-value">' + (p.goalie_pts || 0) + '</span>' +
-            '</div>' +
-            '<div class="breakdown-item">' +
-              '<span class="breakdown-label">Equipe</span>' +
-              '<span class="breakdown-value">' + (p.team_pts || 0) + '</span>' +
-            '</div>' +
+            '<div class="breakdown-item"><span class="breakdown-label">Att</span><span class="breakdown-value">' + (p.att_pts || 0) + '</span></div>' +
+            '<div class="breakdown-item"><span class="breakdown-label">Def</span><span class="breakdown-value">' + (p.def_pts || 0) + '</span></div>' +
+            '<div class="breakdown-item"><span class="breakdown-label">Goaler</span><span class="breakdown-value">' + (p.goalie_pts || 0) + '</span></div>' +
+            '<div class="breakdown-item"><span class="breakdown-label">Equipe</span><span class="breakdown-value">' + (p.team_pts || 0) + '</span></div>' +
           '</div>' +
         '</div>' +
-
         '<div class="total-circle">' +
           '<span class="total-label">TOTAL</span>' +
           '<span class="total-points">' + (p.total_points || 0) + ' pts</span>' +
         '</div>' +
       '</div>' +
-
       '<div class="details" id="details-' + detailId + '">' +
         '<div class="section-title">Attaquants & Défenseurs</div>' +
-        '<table>' +
-          '<thead><tr><th>Joueur</th><th>Statistiques</th><th>Points</th></tr></thead>' +
-          '<tbody>' + skatersHtml + '</tbody>' +
-        '</table>' +
-
+        '<table><thead><tr><th>Joueur</th><th>Statistiques</th><th>Points</th></tr></thead><tbody>' + skatersHtml + '</tbody></table>' +
         '<div class="section-title">Gardiens</div>' +
-        '<table>' +
-          '<thead><tr><th>Gardien</th><th>Statistiques</th><th>Points</th></tr></thead>' +
-          '<tbody>' + goaliesHtml + '</tbody>' +
-        '</table>' +
-
+        '<table><thead><tr><th>Gardien</th><th>Statistiques</th><th>Points</th></tr></thead><tbody>' + goaliesHtml + '</tbody></table>' +
         '<div class="section-title">Équipes</div>' +
-        '<table>' +
-          '<thead><tr><th>Équipe</th><th>Statistiques</th><th>Points</th></tr></thead>' +
-          '<tbody>' + teamsHtml + '</tbody>' +
-        '</table>' +
+        '<table><thead><tr><th>Équipe</th><th>Statistiques</th><th>Points</th></tr></thead><tbody>' + teamsHtml + '</tbody></table>' +
       '</div>';
 
     container.appendChild(card);
   });
 
-  applyResponsiveLayout();
+  // Double requestAnimationFrame pour s'assurer que le layout est calculé
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      applyResponsiveLayout();
+    });
+  });
 }
 
+/**
+ * Met le breakdown à droite dès qu'il y a vraiment de la place.
+ * Calcul plus permissif que la version précédente.
+ */
 function applyResponsiveLayout() {
   document.querySelectorAll('.participant-info').forEach(info => {
     info.classList.remove('wide');
-    
+
     const nameEl = info.querySelector('.participant-name');
     const breakdownEl = info.querySelector('.points-breakdown');
-    
     if (!nameEl || !breakdownEl) return;
-    
-    const availableWidth = info.clientWidth;
-    const nameWidth = nameEl.scrollWidth;
-    const breakdownWidth = breakdownEl.scrollWidth;
-    const neededWidth = nameWidth + breakdownWidth + 40;
-    
-    if (neededWidth < availableWidth) {
+
+    const available = info.clientWidth;
+    const nameW = nameEl.scrollWidth;
+    const breakW = breakdownEl.scrollWidth;
+
+    // Marge plus petite (18px) → passe plus facilement en mode "wide"
+    if (nameW + breakW + 18 < available) {
       info.classList.add('wide');
     }
   });
 }
 
+let resizeTimer;
 window.addEventListener('resize', () => {
-  applyResponsiveLayout();
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(applyResponsiveLayout, 60);
 });
 
 function toggleDetails(index) {
