@@ -12,7 +12,6 @@
   --bg-details: #f8fafc;
   --green-arrow: #22c55e;
   --red-arrow: #ef4444;
-  --logo-orange: #e85a3c;
 }
 
 body { 
@@ -27,7 +26,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== PATTERN DE FORMES ORANGE (inspirées de ton logo) ===== */
+/* ===== PATTERN D'ÉLÉMENTS PNG ===== */
 .bg-shapes {
   position: fixed;
   inset: 0;
@@ -38,25 +37,29 @@ body {
 
 .bg-shape {
   position: absolute;
-  opacity: 0.07;
-  color: var(--logo-orange);
+  opacity: 0.07;          /* même opacité qu'avant */
+  background-image: url('./images/shape.png');  /* ← change le nom si besoin */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-/* Forme SVG réutilisable (style du logo) */
-.bg-shape svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-/* Positions et tailles variées pour un effet semi-aléatoire */
-.s1 { top: 5%;  left: -5%;  width: 320px; height: 280px; transform: rotate(-12deg); }
-.s2 { top: 15%; right: -8%; width: 380px; height: 340px; transform: rotate(18deg);  opacity: 0.06; }
-.s3 { top: 45%; left: -10%; width: 420px; height: 370px; transform: rotate(-8deg);  opacity: 0.05; }
-.s4 { top: 55%; right: -5%; width: 300px; height: 270px; transform: rotate(25deg);  opacity: 0.08; }
-.s5 { top: 75%; left: 10%;  width: 360px; height: 320px; transform: rotate(-20deg); opacity: 0.055; }
-.s6 { top: 30%; left: 55%;  width: 280px; height: 250px; transform: rotate(10deg);  opacity: 0.045; }
-.s7 { top: 85%; right: 15%; width: 340px; height: 300px; transform: rotate(-15deg); opacity: 0.06; }
+/* Beaucoup plus d'éléments, positions variées */
+.s1  { top: 2%;   left: -6%;  width: 280px; height: 250px; transform: rotate(-15deg); }
+.s2  { top: 8%;   right: -7%; width: 340px; height: 300px; transform: rotate(18deg);  opacity: 0.06; }
+.s3  { top: 18%;  left: 5%;   width: 260px; height: 230px; transform: rotate(8deg);   opacity: 0.05; }
+.s4  { top: 25%;  right: 8%;  width: 310px; height: 280px; transform: rotate(-22deg); opacity: 0.07; }
+.s5  { top: 35%;  left: -8%;  width: 380px; height: 340px; transform: rotate(12deg);  opacity: 0.055; }
+.s6  { top: 42%;  right: -5%; width: 290px; height: 260px; transform: rotate(-10deg); opacity: 0.065; }
+.s7  { top: 52%;  left: 15%;  width: 320px; height: 290px; transform: rotate(25deg);  opacity: 0.05; }
+.s8  { top: 58%;  right: 12%; width: 270px; height: 240px; transform: rotate(-18deg); opacity: 0.07; }
+.s9  { top: 68%;  left: -4%;  width: 350px; height: 310px; transform: rotate(6deg);   opacity: 0.06; }
+.s10 { top: 72%;  right: -8%; width: 300px; height: 270px; transform: rotate(-28deg); opacity: 0.05; }
+.s11 { top: 82%;  left: 20%;  width: 330px; height: 295px; transform: rotate(15deg);  opacity: 0.065; }
+.s12 { top: 88%;  right: 5%;  width: 280px; height: 250px; transform: rotate(-12deg); opacity: 0.055; }
+.s13 { top: 12%;  left: 45%;  width: 240px; height: 215px; transform: rotate(30deg);  opacity: 0.045; }
+.s14 { top: 48%;  left: 50%;  width: 260px; height: 230px; transform: rotate(-25deg); opacity: 0.05; }
+.s15 { top: 78%;  left: 55%;  width: 290px; height: 260px; transform: rotate(10deg);  opacity: 0.06; }
 
 .container { 
   width: 100%; 
@@ -361,43 +364,23 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 </head>
 <body>
 
-<!-- Pattern de formes orange (inspirées du logo) -->
+<!-- Pattern d'éléments PNG (15 formes) -->
 <div class="bg-shapes">
-  <div class="bg-shape s1">
-    <svg viewBox="0 0 200 180" fill="currentColor">
-      <path d="M30 150 Q30 155 40 155 L100 40 Q105 30 115 40 L175 155 Q180 160 170 160 L130 160 Q125 160 122 152 L100 95 L78 152 Q75 160 70 160 L30 160 Q20 160 30 150 Z"/>
-    </svg>
-  </div>
-  <div class="bg-shape s2">
-    <svg viewBox="0 0 200 180" fill="currentColor">
-      <path d="M30 150 Q30 155 40 155 L100 40 Q105 30 115 40 L175 155 Q180 160 170 160 L130 160 Q125 160 122 152 L100 95 L78 152 Q75 160 70 160 L30 160 Q20 160 30 150 Z"/>
-    </svg>
-  </div>
-  <div class="bg-shape s3">
-    <svg viewBox="0 0 200 180" fill="currentColor">
-      <path d="M30 150 Q30 155 40 155 L100 40 Q105 30 115 40 L175 155 Q180 160 170 160 L130 160 Q125 160 122 152 L100 95 L78 152 Q75 160 70 160 L30 160 Q20 160 30 150 Z"/>
-    </svg>
-  </div>
-  <div class="bg-shape s4">
-    <svg viewBox="0 0 200 180" fill="currentColor">
-      <path d="M30 150 Q30 155 40 155 L100 40 Q105 30 115 40 L175 155 Q180 160 170 160 L130 160 Q125 160 122 152 L100 95 L78 152 Q75 160 70 160 L30 160 Q20 160 30 150 Z"/>
-    </svg>
-  </div>
-  <div class="bg-shape s5">
-    <svg viewBox="0 0 200 180" fill="currentColor">
-      <path d="M30 150 Q30 155 40 155 L100 40 Q105 30 115 40 L175 155 Q180 160 170 160 L130 160 Q125 160 122 152 L100 95 L78 152 Q75 160 70 160 L30 160 Q20 160 30 150 Z"/>
-    </svg>
-  </div>
-  <div class="bg-shape s6">
-    <svg viewBox="0 0 200 180" fill="currentColor">
-      <path d="M30 150 Q30 155 40 155 L100 40 Q105 30 115 40 L175 155 Q180 160 170 160 L130 160 Q125 160 122 152 L100 95 L78 152 Q75 160 70 160 L30 160 Q20 160 30 150 Z"/>
-    </svg>
-  </div>
-  <div class="bg-shape s7">
-    <svg viewBox="0 0 200 180" fill="currentColor">
-      <path d="M30 150 Q30 155 40 155 L100 40 Q105 30 115 40 L175 155 Q180 160 170 160 L130 160 Q125 160 122 152 L100 95 L78 152 Q75 160 70 160 L30 160 Q20 160 30 150 Z"/>
-    </svg>
-  </div>
+  <div class="bg-shape s1"></div>
+  <div class="bg-shape s2"></div>
+  <div class="bg-shape s3"></div>
+  <div class="bg-shape s4"></div>
+  <div class="bg-shape s5"></div>
+  <div class="bg-shape s6"></div>
+  <div class="bg-shape s7"></div>
+  <div class="bg-shape s8"></div>
+  <div class="bg-shape s9"></div>
+  <div class="bg-shape s10"></div>
+  <div class="bg-shape s11"></div>
+  <div class="bg-shape s12"></div>
+  <div class="bg-shape s13"></div>
+  <div class="bg-shape s14"></div>
+  <div class="bg-shape s15"></div>
 </div>
 
 <div class="container">
