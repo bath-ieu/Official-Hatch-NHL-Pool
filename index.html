@@ -82,7 +82,7 @@ h1 {
   z-index: 2;
 }
 
-/* Texte de dernière mise à jour */
+/* Texte de dernière mise à jour (entre titre et recherche) */
 .last-update {
   text-align: center;
   font-size: 0.68rem;
@@ -133,6 +133,7 @@ h1 {
   opacity: 0.55;
 }
 
+/* Texte d'aide sous la barre de recherche */
 .search-hint {
   text-align: center;
   font-size: 0.72rem;
@@ -154,7 +155,7 @@ h1 {
   width: 100%;
 }
 
-/* --- PASTILLE --- */
+/* --- PASTILLE UNIQUE PLEINE LARGEUR --- */
 .main-pill {
   width: 100%;
   background-color: #ffffff;
@@ -212,20 +213,18 @@ h1 {
 .trend-arrow.down { color: var(--red-arrow); }
 .trend-arrow.same { visibility: hidden; }
 
-/* === LAYOUT NOM + BREAKDOWN === */
 .participant-info {
   display: flex;
-  flex-direction: column;          /* par défaut : breakdown SOUS le nom */
+  flex-direction: column;
   justify-content: center;
   flex-grow: 1;
   min-width: 0;
 }
 
-/* Quand assez de place → breakdown À DROITE du nom */
 .participant-info.wide {
   flex-direction: row;
   align-items: center;
-  gap: clamp(18px, 3vw, 36px);
+  gap: clamp(16px, 3vw, 40px);
 }
 
 .participant-info.wide .participant-name {
@@ -252,7 +251,7 @@ h1 {
 .points-breakdown {
   display: flex;
   justify-content: flex-start;
-  gap: clamp(12px, 4vw, 40px);
+  gap: clamp(12px, 4vw, 45px);
   width: 100%;
 }
 
@@ -332,6 +331,7 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 <body>
 <div class="container">
 
+  <!-- Zone sticky : logo + titre + dernière MAJ + recherche + hint -->
   <div class="sticky-top">
     <header class="header">
       <div class="brand-block">
@@ -340,6 +340,7 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
       </div>
     </header>
 
+    <!-- Texte de dernière mise à jour -->
     <p class="last-update" id="lastUpdate">Mise à jour: —</p>
 
     <div class="search-bar">
@@ -360,6 +361,7 @@ async function loadPoolData() {
     const res = await fetch('data.json?t=' + new Date().getTime());
     const data = await res.json();
     
+    // Afficher la date de dernière mise à jour
     displayLastUpdate(data.updated_at);
 
     allParticipants = compute1224Ranking(data.leaderboard);
@@ -384,6 +386,10 @@ async function loadPoolData() {
   }
 }
 
+/**
+ * Affiche la date de dernière mise à jour au format français
+ * Exemple : "Mise à jour: 8 octobre 05h00"
+ */
 function displayLastUpdate(isoString) {
   const el = document.getElementById('lastUpdate');
   if (!isoString) {
@@ -394,7 +400,7 @@ function displayLastUpdate(isoString) {
   try {
     const date = new Date(isoString);
     const options = { day: 'numeric', month: 'long' };
-    const dateStr = date.toLocaleDateString('fr-CA', options);
+    const dateStr = date.toLocaleDateString('fr-CA', options); // "8 octobre"
     const hours = String(date.getHours()).padStart(2, '0');
     const minutes = String(date.getMinutes()).padStart(2, '0');
     el.textContent = `Mise à jour: ${dateStr} \( {hours}h \){minutes}`;
@@ -528,47 +534,31 @@ function renderLeaderboard(list) {
     container.appendChild(card);
   });
 
-  // Appliquer le layout responsive après le rendu
-  requestAnimationFrame(() => {
-    applyResponsiveLayout();
-  });
+  applyResponsiveLayout();
 }
 
-/**
- * Décide dynamiquement si le breakdown va à droite ou sous le nom
- * selon la largeur réelle de chaque pastille.
- */
 function applyResponsiveLayout() {
   document.querySelectorAll('.participant-info').forEach(info => {
-    // On repart toujours en mode colonne pour mesurer correctement
     info.classList.remove('wide');
-
+    
     const nameEl = info.querySelector('.participant-name');
     const breakdownEl = info.querySelector('.points-breakdown');
+    
     if (!nameEl || !breakdownEl) return;
-
-    // Largeur disponible dans la zone info
-    const available = info.clientWidth;
-
-    // Largeur réelle du contenu
-    const nameW = nameEl.scrollWidth;
-    const breakW = breakdownEl.scrollWidth;
-
-    // On laisse une petite marge de sécurité (30-40 px)
-    const needed = nameW + breakW + 36;
-
-    if (needed < available) {
-      info.classList.add('wide');   // → à droite du nom
+    
+    const availableWidth = info.clientWidth;
+    const nameWidth = nameEl.scrollWidth;
+    const breakdownWidth = breakdownEl.scrollWidth;
+    const neededWidth = nameWidth + breakdownWidth + 40;
+    
+    if (neededWidth < availableWidth) {
+      info.classList.add('wide');
     }
-    // sinon on reste en colonne (sous le nom)
   });
 }
 
-// Recalculer à chaque redimensionnement de la fenêtre
-let resizeTimer;
 window.addEventListener('resize', () => {
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(applyResponsiveLayout, 80);
+  applyResponsiveLayout();
 });
 
 function toggleDetails(index) {
