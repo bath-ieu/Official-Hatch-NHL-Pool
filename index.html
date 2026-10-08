@@ -16,12 +16,60 @@
 
 body { 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-  background: linear-gradient(180deg, #ffffff 0%, #d1d5db 50%, #9ca3af 100%);
+  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 40%, #cbd5e1 100%);
   background-attachment: fixed;
   color: var(--text-dark); 
   margin: 0; 
   padding: 0;
   min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ===== ÉLÉMENTS DE BACKGROUND ===== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: 
+    /* Texture glace légère */
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.4) 0%, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(255,255,255,0.3) 0%, transparent 35%),
+    linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 50%, #cbd5e1 100%);
+  background-attachment: fixed;
+}
+
+/* Pucks et éléments décoratifs */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: 
+    /* Puck 1 */
+    radial-gradient(circle, rgba(52, 73, 94, 0.07) 0 18px, transparent 19px),
+    /* Puck 2 */
+    radial-gradient(circle, rgba(52, 73, 94, 0.05) 0 14px, transparent 15px),
+    /* Puck 3 */
+    radial-gradient(circle, rgba(52, 73, 94, 0.06) 0 22px, transparent 23px),
+    /* Lignes de patinoire très subtiles */
+    linear-gradient(90deg, transparent 49%, rgba(224, 86, 76, 0.04) 49.5%, rgba(224, 86, 76, 0.04) 50.5%, transparent 51%),
+    linear-gradient(0deg, transparent 49%, rgba(52, 73, 94, 0.03) 49.5%, rgba(52, 73, 94, 0.03) 50.5%, transparent 51%);
+  background-size: 
+    120px 120px,
+    90px 90px,
+    160px 160px,
+    100% 100%,
+    100% 100%;
+  background-position: 
+    8% 18%,
+    85% 65%,
+    70% 25%,
+    center,
+    center;
+  background-repeat: no-repeat;
 }
 
 .container { 
@@ -30,6 +78,8 @@ body {
   margin: 0 auto; 
   box-sizing: border-box;
   padding: 0 15px 20px 15px;
+  position: relative;
+  z-index: 1;
 }
 
 /* ===== ZONE STICKY ===== */
@@ -37,8 +87,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: linear-gradient(180deg, #ffffff 0%, #d1d5db 50%, #9ca3af 100%);
-  background-attachment: fixed;
+  background: linear-gradient(180deg, rgba(248,250,252,0.95) 0%, rgba(226,232,240,0.92) 100%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   padding: 8px 15px 8px 15px;
   margin: 0 -15px;
   box-shadow: 0 1px 8px rgba(0,0,0,0.04);
@@ -207,33 +258,46 @@ h1 {
 .trend-arrow.same { visibility: hidden; }
 
 /* === LAYOUT NOM + BREAKDOWN === */
-/* Mode par défaut = à DROITE du nom */
 .participant-info {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: clamp(14px, 2.5vw, 30px);
+  flex-direction: column;
+  justify-content: center;
   flex-grow: 1;
   min-width: 0;
+}
+
+.participant-info.wide {
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(16px, 2.8vw, 32px);
+}
+
+.participant-info.wide .participant-name {
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.participant-info.wide .points-breakdown {
+  flex-grow: 1;
+  justify-content: flex-start;
 }
 
 .participant-name {
   font-size: clamp(1.05rem, 2.7vw, 1.65rem);
   font-weight: 700;
   color: var(--accent-red);
-  margin-bottom: 0;
+  margin-bottom: 3px;
   line-height: 1.15;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  flex-shrink: 0;
 }
 
 .points-breakdown {
   display: flex;
   justify-content: flex-start;
-  gap: clamp(10px, 3.2vw, 34px);
-  flex-grow: 1;
+  gap: clamp(10px, 3.5vw, 36px);
+  width: 100%;
 }
 
 .breakdown-item {
@@ -253,21 +317,6 @@ h1 {
   font-size: clamp(0.75rem, 1.5vw, 1.05rem);
   color: var(--accent-red);
   font-weight: 800;
-}
-
-/* Mode étroit = sous le nom */
-.participant-info.narrow {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2px;
-}
-
-.participant-info.narrow .participant-name {
-  margin-bottom: 2px;
-}
-
-.participant-info.narrow .points-breakdown {
-  width: 100%;
 }
 
 .total-circle {
@@ -315,22 +364,12 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 .section-title { font-weight: 800; color: #0284c7; margin-top: 12px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.03em; }
 .badge { display: inline-block; padding: 2px 5px; border-radius: 4px; font-size: 0.72rem; font-weight: bold; background: #e2e8f0; color: #334155; }
 
-/* Sur très petit écran on force le mode étroit */
 @media (max-width: 520px) {
   .main-pill { padding: 6px 10px; min-height: 62px; }
   .points-breakdown { gap: 8px; }
   h1 { margin-top: -16px; }
   .brand-block { width: 65%; }
   .sticky-top { padding: 6px 12px 6px 12px; }
-
-  .participant-info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
-  }
-  .participant-info .participant-name {
-    margin-bottom: 2px;
-  }
 }
 </style>
 </head>
@@ -499,7 +538,6 @@ function renderLeaderboard(list) {
     container.appendChild(card);
   });
 
-  // Appliquer le mode étroit si nécessaire
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
       applyResponsiveLayout();
@@ -507,34 +545,21 @@ function renderLeaderboard(list) {
   });
 }
 
-/**
- * Mode par défaut = à droite.
- * On ajoute la classe "narrow" seulement quand il n'y a vraiment pas de place.
- */
 function applyResponsiveLayout() {
-  // Sur mobile (CSS media query) on ne touche pas
-  if (window.innerWidth <= 520) return;
-
   document.querySelectorAll('.participant-info').forEach(info => {
-    info.classList.remove('narrow');
+    info.classList.remove('wide');
 
     const nameEl = info.querySelector('.participant-name');
     const breakdownEl = info.querySelector('.points-breakdown');
     if (!nameEl || !breakdownEl) return;
 
-    // On force temporairement le mode row pour mesurer
-    info.style.flexDirection = 'row';
-    
     const available = info.clientWidth;
     const nameW = nameEl.scrollWidth;
     const breakW = breakdownEl.scrollWidth;
 
-    // Si le contenu déborde vraiment → mode étroit
-    if (nameW + breakW + 24 > available) {
-      info.classList.add('narrow');
+    if (nameW + breakW + 18 < available) {
+      info.classList.add('wide');
     }
-
-    info.style.flexDirection = ''; // on laisse le CSS reprendre le contrôle
   });
 }
 
