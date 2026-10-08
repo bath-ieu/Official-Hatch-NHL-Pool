@@ -148,7 +148,7 @@ h1 {
   width: 100%;
 }
 
-/* ===== PASTILLE – hauteur réduite ===== */
+/* ===== PASTILLE ===== */
 .main-pill {
   width: 100%;
   background-color: #ffffff;
@@ -159,7 +159,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  min-height: 68px;                 /* ← hauteur réduite */
+  min-height: 68px;
   cursor: pointer;
   gap: clamp(8px, 2vw, 20px);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
@@ -207,46 +207,33 @@ h1 {
 .trend-arrow.same { visibility: hidden; }
 
 /* === LAYOUT NOM + BREAKDOWN === */
+/* Mode par défaut = à DROITE du nom */
 .participant-info {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
-  min-width: 0;
-}
-
-.participant-info.wide {
   flex-direction: row;
   align-items: center;
-  gap: clamp(16px, 2.8vw, 32px);
-}
-
-.participant-info.wide .participant-name {
-  margin-bottom: 0;
-  flex-shrink: 0;
-}
-
-.participant-info.wide .points-breakdown {
+  gap: clamp(14px, 2.5vw, 30px);
   flex-grow: 1;
-  justify-content: flex-start;
+  min-width: 0;
 }
 
 .participant-name {
   font-size: clamp(1.05rem, 2.7vw, 1.65rem);
   font-weight: 700;
   color: var(--accent-red);
-  margin-bottom: 3px;
+  margin-bottom: 0;
   line-height: 1.15;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  flex-shrink: 0;
 }
 
 .points-breakdown {
   display: flex;
   justify-content: flex-start;
-  gap: clamp(10px, 3.5vw, 36px);
-  width: 100%;
+  gap: clamp(10px, 3.2vw, 34px);
+  flex-grow: 1;
 }
 
 .breakdown-item {
@@ -266,6 +253,21 @@ h1 {
   font-size: clamp(0.75rem, 1.5vw, 1.05rem);
   color: var(--accent-red);
   font-weight: 800;
+}
+
+/* Mode étroit = sous le nom */
+.participant-info.narrow {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.participant-info.narrow .participant-name {
+  margin-bottom: 2px;
+}
+
+.participant-info.narrow .points-breakdown {
+  width: 100%;
 }
 
 .total-circle {
@@ -313,12 +315,22 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 .section-title { font-weight: 800; color: #0284c7; margin-top: 12px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.03em; }
 .badge { display: inline-block; padding: 2px 5px; border-radius: 4px; font-size: 0.72rem; font-weight: bold; background: #e2e8f0; color: #334155; }
 
+/* Sur très petit écran on force le mode étroit */
 @media (max-width: 520px) {
   .main-pill { padding: 6px 10px; min-height: 62px; }
   .points-breakdown { gap: 8px; }
   h1 { margin-top: -16px; }
   .brand-block { width: 65%; }
   .sticky-top { padding: 6px 12px 6px 12px; }
+
+  .participant-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .participant-info .participant-name {
+    margin-bottom: 2px;
+  }
 }
 </style>
 </head>
@@ -487,7 +499,7 @@ function renderLeaderboard(list) {
     container.appendChild(card);
   });
 
-  // Double requestAnimationFrame pour s'assurer que le layout est calculé
+  // Appliquer le mode étroit si nécessaire
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
       applyResponsiveLayout();
@@ -496,25 +508,33 @@ function renderLeaderboard(list) {
 }
 
 /**
- * Met le breakdown à droite dès qu'il y a vraiment de la place.
- * Calcul plus permissif que la version précédente.
+ * Mode par défaut = à droite.
+ * On ajoute la classe "narrow" seulement quand il n'y a vraiment pas de place.
  */
 function applyResponsiveLayout() {
+  // Sur mobile (CSS media query) on ne touche pas
+  if (window.innerWidth <= 520) return;
+
   document.querySelectorAll('.participant-info').forEach(info => {
-    info.classList.remove('wide');
+    info.classList.remove('narrow');
 
     const nameEl = info.querySelector('.participant-name');
     const breakdownEl = info.querySelector('.points-breakdown');
     if (!nameEl || !breakdownEl) return;
 
+    // On force temporairement le mode row pour mesurer
+    info.style.flexDirection = 'row';
+    
     const available = info.clientWidth;
     const nameW = nameEl.scrollWidth;
     const breakW = breakdownEl.scrollWidth;
 
-    // Marge plus petite (18px) → passe plus facilement en mode "wide"
-    if (nameW + breakW + 18 < available) {
-      info.classList.add('wide');
+    // Si le contenu déborde vraiment → mode étroit
+    if (nameW + breakW + 24 > available) {
+      info.classList.add('narrow');
     }
+
+    info.style.flexDirection = ''; // on laisse le CSS reprendre le contrôle
   });
 }
 
