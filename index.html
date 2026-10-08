@@ -50,7 +50,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   width: 100%;
 }
 
@@ -58,7 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 55%;                 /* logo plus petit */
+  width: 55%;
   max-width: 320px;
   margin: 0 auto;
 }
@@ -73,13 +73,23 @@ body {
 h1 { 
   text-align: center; 
   color: var(--text-dark); 
-  font-size: clamp(0.95rem, 2.6vw, 1.45rem);  /* titre plus petit */
-  margin: -22px auto 0 auto;                   /* moins d’espace négatif */
+  font-size: clamp(0.95rem, 2.6vw, 1.45rem);
+  margin: -22px auto 0 auto;
   font-weight: 800;
   width: 100%;
   white-space: nowrap;
   position: relative;
   z-index: 2;
+}
+
+/* Texte de dernière mise à jour (entre titre et recherche) */
+.last-update {
+  text-align: center;
+  font-size: 0.68rem;
+  color: #9ca3af;
+  margin: 2px 0 6px 0;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 /* --- BARRE DE RECHERCHE --- */
@@ -321,7 +331,7 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 <body>
 <div class="container">
 
-  <!-- Zone sticky : logo + titre + recherche + hint -->
+  <!-- Zone sticky : logo + titre + dernière MAJ + recherche + hint -->
   <div class="sticky-top">
     <header class="header">
       <div class="brand-block">
@@ -329,6 +339,9 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
         <h1>🏒 NHL Super Pool 🥅</h1>
       </div>
     </header>
+
+    <!-- Texte de dernière mise à jour -->
+    <p class="last-update" id="lastUpdate">Mise à jour: —</p>
 
     <div class="search-bar">
       <span class="search-icon">🔍</span>
@@ -348,6 +361,9 @@ async function loadPoolData() {
     const res = await fetch('data.json?t=' + new Date().getTime());
     const data = await res.json();
     
+    // Afficher la date de dernière mise à jour
+    displayLastUpdate(data.updated_at);
+
     allParticipants = compute1224Ranking(data.leaderboard);
     renderLeaderboard(allParticipants);
     
@@ -367,6 +383,29 @@ async function loadPoolData() {
     console.error(e);
     document.getElementById('leaderboard').innerHTML = 
       "<p style='text-align:center; color:#ef4444;'>Erreur lors du chargement des données.</p>";
+  }
+}
+
+/**
+ * Affiche la date de dernière mise à jour au format français
+ * Exemple : "Mise à jour: 8 octobre 05h00"
+ */
+function displayLastUpdate(isoString) {
+  const el = document.getElementById('lastUpdate');
+  if (!isoString) {
+    el.textContent = 'Mise à jour: —';
+    return;
+  }
+
+  try {
+    const date = new Date(isoString);
+    const options = { day: 'numeric', month: 'long' };
+    const dateStr = date.toLocaleDateString('fr-CA', options); // "8 octobre"
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    el.textContent = `Mise à jour: ${dateStr} \( {hours}h \){minutes}`;
+  } catch (e) {
+    el.textContent = 'Mise à jour: —';
   }
 }
 
