@@ -26,7 +26,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== PATTERN D'ÉLÉMENTS PNG (taille responsive) ===== */
+/* ===== PATTERN D'ÉLÉMENTS PNG (sans chevauchement) ===== */
 .bg-shapes {
   position: fixed;
   inset: 0;
@@ -42,27 +42,19 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  /* Taille de base responsive */
-  width: clamp(160px, 22vw, 380px);
-  height: clamp(140px, 20vw, 340px);
+  width: clamp(140px, 18vw, 300px);
+  height: clamp(125px, 16vw, 270px);
 }
 
-/* Positions + légères variations de taille */
-.s1  { top: 2%;   left: -6%;  transform: rotate(-15deg); width: clamp(180px, 24vw, 400px); height: clamp(160px, 22vw, 360px); }
-.s2  { top: 8%;   right: -7%; transform: rotate(18deg);  opacity: 0.06; width: clamp(200px, 26vw, 420px); height: clamp(180px, 24vw, 380px); }
-.s3  { top: 18%;  left: 5%;   transform: rotate(8deg);   opacity: 0.05; }
-.s4  { top: 25%;  right: 8%;  transform: rotate(-22deg); opacity: 0.07; width: clamp(170px, 23vw, 390px); height: clamp(150px, 21vw, 350px); }
-.s5  { top: 35%;  left: -8%;  transform: rotate(12deg);  opacity: 0.055; width: clamp(210px, 28vw, 450px); height: clamp(190px, 25vw, 400px); }
-.s6  { top: 42%;  right: -5%; transform: rotate(-10deg); opacity: 0.065; }
-.s7  { top: 52%;  left: 15%;  transform: rotate(25deg);  opacity: 0.05; width: clamp(190px, 25vw, 410px); height: clamp(170px, 23vw, 370px); }
-.s8  { top: 58%;  right: 12%; transform: rotate(-18deg); opacity: 0.07; }
-.s9  { top: 68%;  left: -4%;  transform: rotate(6deg);   opacity: 0.06; width: clamp(200px, 27vw, 430px); height: clamp(180px, 24vw, 380px); }
-.s10 { top: 72%;  right: -8%; transform: rotate(-28deg); opacity: 0.05; }
-.s11 { top: 82%;  left: 20%;  transform: rotate(15deg);  opacity: 0.065; width: clamp(180px, 24vw, 400px); height: clamp(160px, 22vw, 360px); }
-.s12 { top: 88%;  right: 5%;  transform: rotate(-12deg); opacity: 0.055; }
-.s13 { top: 12%;  left: 45%;  transform: rotate(30deg);  opacity: 0.045; width: clamp(150px, 20vw, 340px); height: clamp(135px, 18vw, 300px); }
-.s14 { top: 48%;  left: 50%;  transform: rotate(-25deg); opacity: 0.05; }
-.s15 { top: 78%;  left: 55%;  transform: rotate(10deg);  opacity: 0.06; width: clamp(170px, 23vw, 380px); height: clamp(150px, 21vw, 340px); }
+/* Positions bien espacées (pas de chevauchement) */
+.s1  { top: 3%;   left: 2%;   transform: rotate(-12deg); }
+.s2  { top: 5%;   right: 3%;  transform: rotate(15deg);  opacity: 0.06; }
+.s3  { top: 28%;  left: 4%;   transform: rotate(8deg);   opacity: 0.055; }
+.s4  { top: 30%;  right: 5%;  transform: rotate(-18deg); opacity: 0.065; }
+.s5  { top: 52%;  left: 3%;   transform: rotate(20deg);  opacity: 0.05; }
+.s6  { top: 55%;  right: 4%;  transform: rotate(-10deg); opacity: 0.07; }
+.s7  { top: 78%;  left: 6%;   transform: rotate(-15deg); opacity: 0.06; }
+.s8  { top: 80%;  right: 6%;  transform: rotate(12deg);  opacity: 0.055; }
 
 .container { 
   width: 100%; 
@@ -129,6 +121,7 @@ h1 {
   color: #9ca3af;
   margin: 2px 0 6px 0;
   font-weight: 500;
+  min-height: 1em;
 }
 
 .search-bar {
@@ -367,7 +360,7 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 </head>
 <body>
 
-<!-- Pattern d'éléments PNG (15 formes) – taille responsive -->
+<!-- 8 formes bien espacées (pas de chevauchement) -->
 <div class="bg-shapes">
   <div class="bg-shape s1"></div>
   <div class="bg-shape s2"></div>
@@ -377,13 +370,6 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   <div class="bg-shape s6"></div>
   <div class="bg-shape s7"></div>
   <div class="bg-shape s8"></div>
-  <div class="bg-shape s9"></div>
-  <div class="bg-shape s10"></div>
-  <div class="bg-shape s11"></div>
-  <div class="bg-shape s12"></div>
-  <div class="bg-shape s13"></div>
-  <div class="bg-shape s14"></div>
-  <div class="bg-shape s15"></div>
 </div>
 
 <div class="container">
@@ -416,9 +402,10 @@ async function loadPoolData() {
     const res = await fetch('data.json?t=' + new Date().getTime());
     const data = await res.json();
     
-    displayLastUpdate(data.updated_at);
+    // Afficher la date de mise à jour
+    displayLastUpdate(data.updated_at || data.last_update || null);
 
-    allParticipants = compute1224Ranking(data.leaderboard);
+    allParticipants = compute1224Ranking(data.leaderboard || []);
     renderLeaderboard(allParticipants);
     
     document.getElementById('searchInput').addEventListener('input', (e) => {
@@ -435,6 +422,7 @@ async function loadPoolData() {
     
   } catch (e) {
     console.error(e);
+    document.getElementById('lastUpdate').textContent = 'Mise à jour: —';
     document.getElementById('leaderboard').innerHTML = 
       "<p style='text-align:center; color:#ef4444;'>Erreur lors du chargement des données.</p>";
   }
@@ -442,18 +430,30 @@ async function loadPoolData() {
 
 function displayLastUpdate(isoString) {
   const el = document.getElementById('lastUpdate');
+  if (!el) return;
+
   if (!isoString) {
     el.textContent = 'Mise à jour: —';
     return;
   }
+
   try {
     const date = new Date(isoString);
+    
+    // Vérifier si la date est valide
+    if (isNaN(date.getTime())) {
+      el.textContent = 'Mise à jour: —';
+      return;
+    }
+
     const options = { day: 'numeric', month: 'long' };
     const dateStr = date.toLocaleDateString('fr-CA', options);
     const hours = String(date.getHours()).padStart(2, '0');
     const minutes = String(date.getMinutes()).padStart(2, '0');
-    el.textContent = `Mise à jour: ${dateStr} \( {hours}h \){minutes}`;
+    
+    el.textContent = 'Mise à jour: ' + dateStr + ' ' + hours + 'h' + minutes;
   } catch (e) {
+    console.error('Erreur date:', e);
     el.textContent = 'Mise à jour: —';
   }
 }
