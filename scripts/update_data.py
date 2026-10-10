@@ -1,6 +1,7 @@
 import json
 import os
 import urllib.request
+from datetime import datetime
 
 SEASON_ID = "20262027"
 
@@ -1261,6 +1262,7 @@ def main():
 
     output = {
         "season": SEASON_ID,
+        "updated_at": datetime.now().astimezone().isoformat(),
         "leaderboard": leaderboard
     }
 
