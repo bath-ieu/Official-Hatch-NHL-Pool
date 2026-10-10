@@ -1,6 +1,6 @@
 {
   "season": "20262027",
-  "updated_at": "2026-10-10T09:12:34-04:00",
+  "updated_at": "2026-10-10T14:22:06.158195+00:00",
   "leaderboard": [
     {
       "name": "Serge Arguin",
@@ -900,7 +900,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Jeanne Lemonde-Trudeau",
@@ -1125,7 +1125,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Alexandre Bergeron",
@@ -1350,7 +1350,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Patrick Barbieri",
@@ -1575,7 +1575,7 @@
           "points": 10
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Thomas Gueville",
@@ -1800,7 +1800,7 @@
           "points": 10
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "François Lacerte",
@@ -2025,7 +2025,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Emmanuelle Lajoie",
@@ -2475,7 +2475,7 @@
           "points": 12
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Andreanne Blais",
@@ -2700,7 +2700,7 @@
           "points": 5
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Naomie Curis-Friedman",
@@ -2925,7 +2925,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Bruno Cournoyer",
@@ -3150,7 +3150,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Richard Verbanac",
@@ -3375,7 +3375,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Marc-Antoine Dery",
@@ -3600,7 +3600,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Ludovic Morissette",
@@ -3825,7 +3825,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Marc-Antoine Lebel",
@@ -4050,7 +4050,7 @@
           "points": 12
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Mathieu Huot",
@@ -4275,7 +4275,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Vincent Joyal",
@@ -4500,7 +4500,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Olivier Lemoine",
@@ -4725,7 +4725,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Mohamad Bouaram",
@@ -4950,7 +4950,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Tristan Juette",
@@ -5175,7 +5175,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Vincent Cassabon",
@@ -5400,7 +5400,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Louis-Philippe Dufresne Viau",
@@ -5625,7 +5625,7 @@
           "points": 9
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Léonore Jean-François",
@@ -5850,7 +5850,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Matthew Totarella",
@@ -6075,7 +6075,7 @@
           "points": 12
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Hubert Perreault",
@@ -6300,7 +6300,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Patrick Bisson",
@@ -6525,7 +6525,7 @@
           "points": 10
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Normand Yelle",
@@ -6750,7 +6750,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Robert Dellazizzo",
@@ -6975,7 +6975,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Ariel Beauregard Breton",
@@ -7200,7 +7200,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Olivier Jubelin",
@@ -7425,7 +7425,7 @@
           "points": 7
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Olivier Tom",
@@ -7650,7 +7650,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Serge Masse",
@@ -7875,7 +7875,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Daniel Marcoux",
@@ -8100,7 +8100,7 @@
           "points": 12
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Steven Parent",
@@ -8325,7 +8325,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Philippe Khalil",
@@ -8550,7 +8550,7 @@
           "points": 12
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Noémie Pinsonnault-Duchemin",
@@ -8775,7 +8775,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Pamela Pachal",
@@ -9000,7 +9000,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Marc Cousineau",
@@ -9225,7 +9225,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Nathalie Bourgeois",
@@ -9450,7 +9450,7 @@
           "points": 7
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Ahmad Bou Aram",
@@ -9675,7 +9675,7 @@
           "points": 9
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Kevin Gadbois",
@@ -9900,7 +9900,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "George Forlini",
@@ -10125,7 +10125,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Xavier Rousseau-Laliberte",
@@ -10350,7 +10350,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Benjamin Arcand",
@@ -10575,7 +10575,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Carine Adam",
@@ -10800,7 +10800,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jean Francois Boulet",
@@ -11025,7 +11025,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Charles-Olivier Boudrias",
@@ -11250,7 +11250,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Philippe Martin",
@@ -11475,7 +11475,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Michael Lee",
@@ -11700,7 +11700,7 @@
           "points": 12
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Arnaud Fournier",
@@ -11925,7 +11925,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Nick Totarella",
@@ -12150,7 +12150,7 @@
           "points": 9
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Catherine Gaudio",
@@ -12375,7 +12375,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Justine Fournier",
@@ -12600,7 +12600,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Danny Bouchard",
@@ -12825,7 +12825,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Mounir Tamimi",
@@ -13050,7 +13050,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Michel Bolduc",
@@ -13275,7 +13275,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Robert Austen",
@@ -13500,7 +13500,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Xavier Lafortune",
@@ -13725,7 +13725,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jean-Benoit Boucher",
@@ -13950,7 +13950,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Philippe Denis-Ducharme",
@@ -14175,7 +14175,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Martin Brunet",
@@ -14400,7 +14400,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Daniel Reichelson",
@@ -14625,7 +14625,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Alondra Rima",
@@ -14850,7 +14850,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Gabrielle Lamirande-Gauvin",
@@ -15075,7 +15075,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Logan Bélanger",
@@ -15300,7 +15300,7 @@
           "points": 10
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Samia Merazga",
@@ -15525,7 +15525,7 @@
           "points": 12
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Allen Chan",
@@ -15750,7 +15750,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Vinh Truong",
@@ -15975,7 +15975,7 @@
           "points": 12
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Julie Harvey",
@@ -16200,7 +16200,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Charles Simard",
@@ -16425,7 +16425,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Michael Brie",
@@ -16875,7 +16875,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Cristina Murillo",
@@ -17100,7 +17100,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Jean-Sebastien Langlois",
@@ -17325,7 +17325,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Martin Beaulieu",
@@ -17550,7 +17550,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Bakar Amara",
@@ -17775,7 +17775,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Line Poirier",
@@ -18000,7 +18000,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Aymeric Bellefeuille",
@@ -18225,7 +18225,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Jean-Sebastien Bisaillon",
@@ -18450,7 +18450,7 @@
           "points": 10
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Marie-Laurence Boutin",
@@ -18675,7 +18675,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Benoit Gaudet",
@@ -18900,7 +18900,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jean Lamoureux",
@@ -19125,7 +19125,7 @@
           "points": 9
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Amelie Mercier Arsenault",
@@ -19350,7 +19350,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Quentin Tuphile",
@@ -19575,7 +19575,7 @@
           "points": 10
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Nousk Ghailane",
@@ -19800,7 +19800,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Josianne Lafontaine",
@@ -20025,7 +20025,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Marlyn Tchoukuegno",
@@ -20250,7 +20250,7 @@
           "points": 7
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Lenna Gatouillat",
@@ -20475,7 +20475,7 @@
           "points": 12
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Colin Barbeau",
@@ -20700,7 +20700,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jacob Bissonnette",
@@ -20925,7 +20925,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Joel Labadie",
@@ -21150,7 +21150,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Mathieu Labranche",
@@ -21375,7 +21375,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Marie-Claude Tremblay",
@@ -21600,7 +21600,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Antoine Duguay",
@@ -21825,7 +21825,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Rebecca Owen",
@@ -22050,7 +22050,7 @@
           "points": 10
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Francis Emond",
@@ -22275,7 +22275,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Pier-Olivier Hotte-Rene",
@@ -22500,7 +22500,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Kalvin Southern",
@@ -22725,7 +22725,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Axelle Monnot",
@@ -22950,7 +22950,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Shayne Renaud",
@@ -23175,7 +23175,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Fabrice Danger",
@@ -23400,7 +23400,7 @@
           "points": 12
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Isabelle Lemay",
@@ -23625,7 +23625,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Leandro Pereira",
@@ -23850,7 +23850,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Mélanie Ouellette",
@@ -24075,7 +24075,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Eva Marre",
@@ -24300,7 +24300,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Xavier Monette",
@@ -24525,7 +24525,7 @@
           "points": 12
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Samuel Rouleau",
@@ -24750,7 +24750,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Louis-Philippe Corriveau",
@@ -24975,7 +24975,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Jessica Forest",
@@ -25200,7 +25200,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Sophie Couture",
@@ -25425,7 +25425,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "John Greene",
@@ -25650,7 +25650,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Cédrick Charest",
@@ -25875,7 +25875,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Chloe Sallé",
@@ -26100,7 +26100,7 @@
           "points": 9
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Serge Danis",
@@ -26325,7 +26325,7 @@
           "points": 9
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Charles-Antoine Dubeau",
@@ -26550,7 +26550,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Michael Bino",
@@ -26775,7 +26775,7 @@
           "points": 12
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Dina Lagonskaya",
@@ -27000,7 +27000,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Martin Bélanger",
@@ -27225,7 +27225,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Laurence Gamache",
@@ -27450,7 +27450,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Maxime Beaudry-Lemay",
@@ -27675,7 +27675,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Regina Nair",
@@ -27900,7 +27900,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Mathieu Mei",
@@ -28125,7 +28125,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Eduardo",
@@ -28350,7 +28350,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Ashley Nguyen",
@@ -28575,7 +28575,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Samuel Leblanc",
@@ -28800,7 +28800,7 @@
           "points": 9
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Alexis Lemire",
@@ -29025,7 +29025,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Karl St-André",
@@ -29250,7 +29250,7 @@
           "points": 3
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Florence Riopel",
@@ -29475,7 +29475,7 @@
           "points": 12
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Guillaume Leblanc",
@@ -29700,7 +29700,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Alexia Fiorilli",
@@ -29925,7 +29925,7 @@
           "points": 10
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Jordan Moman",
@@ -30150,7 +30150,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Nicolas Besner",
@@ -30375,7 +30375,7 @@
           "points": 10
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Mathieu St-Pierre",
@@ -30600,7 +30600,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Samantha Levac",
@@ -30825,7 +30825,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Elisabeth Danis",
@@ -31050,7 +31050,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Jean-Marc Gauthier",
@@ -31275,7 +31275,7 @@
           "points": 7
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Dany Lafontaine",
@@ -31500,7 +31500,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Aya el Khazen",
@@ -31725,7 +31725,7 @@
           "points": 12
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Alain Roy",
@@ -31950,7 +31950,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jean Gohin",
@@ -32175,7 +32175,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Guildo Gagnon",
@@ -32400,7 +32400,7 @@
           "points": 9
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Vincent Coulombe",
@@ -32625,7 +32625,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Frederic Langevin",
@@ -32850,7 +32850,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Andrew Middleton",
@@ -33075,7 +33075,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Simon-Pierre Lefebvre",
@@ -33300,7 +33300,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Gerald Tugas",
@@ -33525,7 +33525,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Dominic Neveu",
@@ -33750,7 +33750,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Hak Jun Oh",
@@ -33975,7 +33975,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Veronique Therrien",
@@ -34200,7 +34200,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Marc-Antoine Laforest",
@@ -34425,7 +34425,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jules Saint-Jean",
@@ -34650,7 +34650,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Steeve Simard",
@@ -34875,7 +34875,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Nicolas St-Pierre",
@@ -35100,7 +35100,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Alexy Fafard",
@@ -35325,7 +35325,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Alexandre Neal",
@@ -35775,7 +35775,7 @@
           "points": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Florence Gagnon",
@@ -36000,7 +36000,7 @@
           "points": 12
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Sabrina Ficara",
@@ -36225,7 +36225,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Marine Quemeneur",
@@ -36450,7 +36450,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Pierre-Luc Pigeon",
@@ -36675,7 +36675,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Gabriel De Muy Larose",
@@ -36900,7 +36900,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Yves Couture",
@@ -37125,7 +37125,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Yanick Tremblay",
@@ -37350,7 +37350,7 @@
           "points": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Rami El Mays",
@@ -37800,7 +37800,7 @@
           "points": 9
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Charles Gauthier",
@@ -38025,7 +38025,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Lyès Hacini",
@@ -38250,7 +38250,7 @@
           "points": 12
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Julie Arseneault",
@@ -38475,7 +38475,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Anne-Laurence Trudeau",
@@ -38925,7 +38925,7 @@
           "points": 6
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Lauriane Marchand",
@@ -39150,7 +39150,7 @@
           "points": 6
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jean-Philip Tremblay",
@@ -39375,7 +39375,7 @@
           "points": 10
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Francois Létourneau",
