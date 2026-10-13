@@ -264,7 +264,6 @@ h1 {
   min-width: 0;
 }
 
-/* Nom d'équipe = grand texte rouge (ex-style du participant) */
 .team-name-main {
   font-size: clamp(1.05rem, 2.7vw, 1.65rem);
   font-weight: 700;
@@ -276,16 +275,15 @@ h1 {
   text-overflow: ellipsis;
 }
 
-/* Nom du participant = petit texte dessous */
 .participant-name-sub {
-  font-size: clamp(0.65rem, 1.3vw, 0.82rem);
+  font-size: clamp(0.78rem, 1.55vw, 0.98rem);
   font-weight: 500;
   color: var(--border-color);
-  line-height: 1.2;
+  line-height: 1.25;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .points-breakdown {
@@ -396,7 +394,7 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 
     <div class="search-bar">
       <span class="search-icon">🔍</span>
-      <input type="text" id="searchInput" placeholder="Rechercher un participant ou une équipe..." autocomplete="off">
+      <input type="text" id="searchInput" placeholder="Rechercher un participant..." autocomplete="off">
     </div>
     <p class="search-hint">Cliquer sur le nom pour plus de détails</p>
   </div>
@@ -441,7 +439,7 @@ const TEAM_NAMES = {
   "Pierre-Luc Pigeon": "Ramenez_Scott_Gomez",
   "Serge Masse": "Mass2236",
   "Charles Gauthier": "Demidov Dynasty 😄",
-  "Samia Merazga": "les Amateurs",
+  "Samia Merazga": "Les Amateurs",
   "Lucas Parkinson": "The fast Lane",
   "Jessica Forest": "Run Forest Run!",
   "Marc Cousineau": "Les Puckés",
@@ -454,8 +452,8 @@ const TEAM_NAMES = {
   "Gabriel De Muy Larose": "Infra",
   "Josianne Lafontaine": "PDSG RAIL",
   "Soulaiman Benaamer": "SB89",
-  "Xavier Rousseau-Laliberte": "xavouine la fouine",
-  "Andreanne Blais": "pvm",
+  "Xavier Rousseau-Laliberte": "Xavouine la fouine",
+  "Andreanne Blais": "Pvm",
   "Alexandre Neal": "Neal Knows Nothing",
   "Matthew Totarella": "Le Canadiens Express",
   "Dina Lagonskaya": "Tailings Titans",
@@ -562,7 +560,7 @@ const TEAM_NAMES = {
   "Amelie Mercier Arsenault": "Centurion",
   "Marine Quemeneur": "Quanadiens",
   "Tristan Juette": "French Wombats",
-  "Catherine Gaudio": "hatching chicks",
+  "Catherine Gaudio": "Hatching chicks",
   "Marie-Claude Tremblay": "MALCAN stars",
   "Anthony Lamer": "AntoLamer",
   "Marc-Antoine Lebel": "Dernier au Classement, Premier au buffet",
