@@ -46,7 +46,6 @@ body {
   height: clamp(125px, 16vw, 270px);
 }
 
-/* Positions bien espacées (pas de chevauchement) */
 .s1  { top: 3%;   left: 2%;   transform: rotate(-12deg); }
 .s2  { top: 5%;   right: 3%;  transform: rotate(15deg);  opacity: 0.06; }
 .s3  { top: 28%;  left: 4%;   transform: rotate(8deg);   opacity: 0.055; }
@@ -256,8 +255,7 @@ h1 {
   gap: clamp(16px, 2.8vw, 32px);
 }
 
-.participant-info.wide .participant-name {
-  margin-bottom: 0;
+.participant-info.wide .name-block {
   flex-shrink: 0;
 }
 
@@ -266,15 +264,30 @@ h1 {
   justify-content: flex-start;
 }
 
+.name-block {
+  min-width: 0;
+}
+
 .participant-name {
   font-size: clamp(1.05rem, 2.7vw, 1.65rem);
   font-weight: 700;
   color: var(--accent-red);
-  margin-bottom: 3px;
+  margin-bottom: 1px;
   line-height: 1.15;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.team-name {
+  font-size: clamp(0.65rem, 1.3vw, 0.82rem);
+  font-weight: 500;
+  color: var(--border-color);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.85;
 }
 
 .points-breakdown {
@@ -360,7 +373,6 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 </head>
 <body>
 
-<!-- 8 formes bien espacées (pas de chevauchement) -->
 <div class="bg-shapes">
   <div class="bg-shape s1"></div>
   <div class="bg-shape s2"></div>
@@ -395,6 +407,187 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 </div>
 
 <script>
+/* ===== NOMS D'ÉQUIPE ===== */
+const TEAM_NAMES = {
+  "Cédrick Charest": "F* Kreider - Charest",
+  "Hak Jun Oh": "Junnie B Johns",
+  "Alexandru Rogai": "Les Rapides de Ville Marie",
+  "Thomas Gueville": "PositiveChange",
+  "Michael Lee": "GOGO HYDRO",
+  "Robert Dellazizzo": "Canadiens de Montréal",
+  "Isabelle Lemay": "ISA",
+  "Regina Nair": "Habsapalooza",
+  "François Lacerte": "Les chars d'assault",
+  "Pamela Pachal": "Freddy26",
+  "Léonore Jean-François": "Je ne connais rien au Hockey",
+  "Francois Létourneau": "Starling",
+  "Mathieu Mei": "Les Chèvres",
+  "Jean-Philip Tremblay": "GO RAPTORS",
+  "Mathieu Labranche": "The underdogs",
+  "Olivier Tom": "Les pesants",
+  "Gabrielle Lamirande-Gauvin": "Le Power Play",
+  "Charles-Antoine Dubeau": "Sauce Brune Mafia",
+  "Quentin Tuphile": "Tempêtes de Laval",
+  "Nousk Ghailane": "Les Canhatchiens",
+  "Leandro Pereira": "Lord of the Rinks",
+  "Louis-Philippe Dufresne Viau": "AST (Analyse Statistique Toute-croche)",
+  "Alexis Lemire": "50Tablette",
+  "Marc-Antoine Dery": "Hatch Orangutans",
+  "Sabrina Ficara": "Ice Ice Baby",
+  "Logan Bélanger": "J'aime trop Josh Anderson",
+  "Normand Yelle": "Team Yelle",
+  "Arnaud Fournier": "Lamar Jackson",
+  "Ariel Beauregard Breton": "Heureux hasards",
+  "Nicolas Besner": "The Risk Was Everyone Else",
+  "Jean-Sebastien Bisaillon": "Gagnante",
+  "Alexandre Bergeron": "Bergy",
+  "Pierre-Luc Pigeon": "Ramenez_Scott_Gomez",
+  "Serge Masse": "Mass2236",
+  "Charles Gauthier": "Demidov Dynasty 😄",
+  "Samia Merazga": "les Amateurs",
+  "Lucas Parkinson": "The fast Lane",
+  "Jessica Forest": "Run Forest Run!",
+  "Marc Cousineau": "Les Puckés",
+  "Michael Bino": "Mother Puckers",
+  "Nicolas St-Pierre": "Lane train",
+  "Alexy Fafard": "Bastions de Blainville",
+  "Marie-Laurence Boutin": "Team Boutin",
+  "Martin Brunet": "Les Clandestins",
+  "Rebecca Owen": "Habs",
+  "Gabriel De Muy Larose": "Infra",
+  "Josianne Lafontaine": "PDSG RAIL",
+  "Soulaiman Benaamer": "SB89",
+  "Xavier Rousseau-Laliberte": "xavouine la fouine",
+  "Andreanne Blais": "pvm",
+  "Alexandre Neal": "Neal Knows Nothing",
+  "Matthew Totarella": "Le Canadiens Express",
+  "Dina Lagonskaya": "Tailings Titans",
+  "Martin Bélanger": "Boom Boom 99",
+  "Julie Arseneault": "Arseneault",
+  "Eduardo": "Trio of four",
+  "Rami El Mays": "The dream team",
+  "Nick Totarella": "GymJunkieNick",
+  "Marlyn Tchoukuegno": "Holy Team",
+  "Lenna Gatouillat": "PinkStiletto💅",
+  "Simon-Pierre Lefebvre": "Les Roams de PVM",
+  "Mélanie Ouellette": "Puck Fiction",
+  "Alondra Rima": "Normand Marineau!",
+  "Laurence Gamache": "Les Timbits",
+  "Cristina Murillo": "Les belugas",
+  "Julie Harvey": "Les Dynamos Défenseurs",
+  "Vincent Joyal": "Team Joyal Power",
+  "Benjamin Arcand": "L'équipe en forme",
+  "Bruno Cournoyer": "Babcock downfall",
+  "Mathieu St-Pierre": "Sags",
+  "Francis Emond": "Crème Boston",
+  "Maxime Beaudry-Lemay": "The Rectified Team",
+  "Marc-Antoine Laforest": "Canadiens1",
+  "Carine Adam": "Hatch Trick1",
+  "Samantha Levac": "Les Québécois de Montréal",
+  "Xavier Lafortune": "Thermique",
+  "Jean-Sebastien Langlois": "Team JS",
+  "Chloe Sallé": "Maple Syrup",
+  "Sophie Couture": "Queens de Montreal",
+  "Richard Verbanac": "Contrôle, Automatisation & Mise en Échec",
+  "Steeve Simard": "L'œil du tigre",
+  "Vincent Coulombe": "Vincent's team",
+  "Elisabeth Danis": "Nostradanis",
+  "Pier-Olivier Hotte-Rene": "Les Doys",
+  "Karl St-André": "Team KSA",
+  "Benoit Gaudet": "Goal Caufield",
+  "Colin Barbeau": "Les Colinours",
+  "Jean-Marc Gauthier": "The Team 2026-27",
+  "Charles Simard": "Charley Bettman's League",
+  "Daniel Marcoux": "Lac St-Jean Power play",
+  "Nathalie Bourgeois": "Queen",
+  "Daniel Reichelson": "Kirill or be Killed",
+  "Yanick Tremblay": "The team",
+  "Aya el Khazen": "B1",
+  "Gerald Tugas": "Puck Around and Find Out",
+  "Eva Marre": "Montreal's Team",
+  "Serge Arguin": "Go-Habs-Go",
+  "Veronique Therrien": "Go! Hatch Go!",
+  "Jacob Bissonnette": "Les Benchwarmers",
+  "Kalvin Southern": "Team Copilot",
+  "Ashley Nguyen": "Connor McChanical-Engineer",
+  "Yves Couture": "Les démons",
+  "Axelle Monnot": "Gigote",
+  "Andrew Middleton": "Bigmountains",
+  "Alain Roy": "Alain Roy",
+  "Olivier Lemoine": "Hatch Trick2",
+  "Michel Bolduc": "Le statisticien avancé",
+  "Martin Beaulieu": "Up the Irons!",
+  "Caroline Bergeron": "Random chaos",
+  "Florence Gagnon": "Panthers de la Floride",
+  "Alexia Fiorilli": "Tkachuk Yourself",
+  "John Greene": "WOW",
+  "Jules Saint-Jean": "UdeS fan club",
+  "Jean Lamoureux": "Trump Derangement Syndrome",
+  "Bakar Amara": "Galacticos",
+  "Steven Parent": "Stevie Wonder's Team",
+  "Jean-Benoit Boucher": "Vendée Team",
+  "Mathieu Huot": "The Pool North",
+  "Jean Gohin": "Étoile Noire de Strasbourg",
+  "Philippe Khalil": "Les Chanadiens",
+  "Xavier Leblanc": "Xavouine la pas fine",
+  "Emmanuelle Lajoie": "Les licornes",
+  "Antoine Duguay": "Les boulettes",
+  "Anne-Laurence Trudeau": "Les baleines",
+  "Xavier Monette": "Bestguess",
+  "Dominic Neveu": "Canadiens2",
+  "Serge Danis": "Mollets de Béton",
+  "Mounir Tamimi": "Makar au Chocolat",
+  "Florence Riopel": "Rio",
+  "Guillaume Leblanc": "Les Étoiles",
+  "Shayne Renaud": "Sauce Boss",
+  "Jordan Moman": "The Mighty Potash",
+  "Samuel Rouleau": "Sam's last minute team",
+  "Ludovic Morissette": "Puckin' Out of Office Legends",
+  "Lyès Hacini": "Mouloudia",
+  "Etienne Paquin-Foisy": "Happy Kraken",
+  "Ahmad Bou Aram": "The Red Ducks",
+  "Michael Brie": "Habs4Hatch",
+  "Lauriane Marchand": "Les Hatchers de TR",
+  "Olivier Jubelin": "Jubelin",
+  "Jean Francois Boulet": "Goldorak",
+  "Janet Long": "Hatched Rivalry",
+  "Louis-Philippe Corriveau": "LP",
+  "Philippe Denis-Ducharme": "Le pool de Phil",
+  "Line Poirier": "Non, rien de rien, non je n'y connais rien de rien!",
+  "Olivier Guimond": "Facilities",
+  "Allen Chan": "Demigod93",
+  "Fabrice Danger": "Arsenal HC",
+  "Joel Labadie": "Flamingos",
+  "Frederic Langevin": "K Pop Star",
+  "Jeanne Lemonde-Trudeau": "Les Chatnadiens de Miaouréal",
+  "Dany Lafontaine": "DanyHockey",
+  "Charles-Olivier Boudrias": "L'arbitre en chef",
+  "Amelie Mercier Arsenault": "Centurion",
+  "Marine Quemeneur": "Quanadiens",
+  "Tristan Juette": "French Wombats",
+  "Catherine Gaudio": "hatching chicks",
+  "Marie-Claude Tremblay": "MALCAN stars",
+  "Anthony Lamer": "AntoLamer",
+  "Marc-Antoine Lebel": "Dernier au Classement, Premier au buffet",
+  "Vincent Cassabon": "Cassabon",
+  "Robert Austen": "Top Fromage",
+  "Philippe Martin": "BDP",
+  "Kevin Gadbois": "Les gars de Sorel",
+  "Hubert Perreault": "Les chèvres du 14e 🐐",
+  "Noémie Pinsonnault-Duchemin": "Puck it Off",
+  "Vinh Truong": "Montreal - Vinh",
+  "George Forlini": "The Blade Runners",
+  "Samuel Leblanc": "Sam's team",
+  "Aymeric Bellefeuille": "Aym Team",
+  "Justine Fournier": "Team Fournier",
+  "Patrick Bisson": "Santa Monica 36ers",
+  "Danny Bouchard": "Lord Stanley Stars",
+  "Naomie Curis-Friedman": "Naordiques de Québec",
+  "Guildo Gagnon": "Nordique",
+  "Mohamad Bouaram": "Mo B Snipin'",
+  "Patrick Barbieri": "Tkachucky Fried Chicken"
+};
+
 let allParticipants = [];
 
 async function loadPoolData() {
@@ -402,7 +595,6 @@ async function loadPoolData() {
     const res = await fetch('data.json?t=' + new Date().getTime());
     const data = await res.json();
     
-    // Afficher la date de mise à jour
     displayLastUpdate(data.updated_at || data.last_update || null);
 
     allParticipants = compute1224Ranking(data.leaderboard || []);
@@ -415,7 +607,8 @@ async function loadPoolData() {
         return;
       }
       const filtered = allParticipants.filter(p => 
-        p.name.toLowerCase().includes(query)
+        p.name.toLowerCase().includes(query) ||
+        (TEAM_NAMES[p.name] || '').toLowerCase().includes(query)
       );
       renderLeaderboard(filtered);
     });
@@ -439,8 +632,6 @@ function displayLastUpdate(isoString) {
 
   try {
     const date = new Date(isoString);
-    
-    // Vérifier si la date est valide
     if (isNaN(date.getTime())) {
       el.textContent = 'Mise à jour: —';
       return;
@@ -517,6 +708,10 @@ function renderLeaderboard(list) {
 
     const detailId = index;
     const crownHtml = p.rank === 1 ? '<span class="crown">👑</span>' : '';
+    const teamName = TEAM_NAMES[p.name] || '';
+    const teamHtml = teamName
+      ? '<div class="team-name">Nom d\'équipe: ' + teamName + '</div>'
+      : '';
 
     card.innerHTML = 
       '<div class="main-pill" onclick="toggleDetails(' + detailId + ')">' +
@@ -525,7 +720,10 @@ function renderLeaderboard(list) {
           trendHtml +
         '</div>' +
         '<div class="participant-info" id="info-' + detailId + '">' +
-          '<div class="participant-name">' + p.name + '</div>' +
+          '<div class="name-block">' +
+            '<div class="participant-name">' + p.name + '</div>' +
+            teamHtml +
+          '</div>' +
           '<div class="points-breakdown">' +
             '<div class="breakdown-item"><span class="breakdown-label">Att</span><span class="breakdown-value">' + (p.att_pts || 0) + '</span></div>' +
             '<div class="breakdown-item"><span class="breakdown-label">Def</span><span class="breakdown-value">' + (p.def_pts || 0) + '</span></div>' +
@@ -561,12 +759,12 @@ function applyResponsiveLayout() {
   document.querySelectorAll('.participant-info').forEach(info => {
     info.classList.remove('wide');
 
-    const nameEl = info.querySelector('.participant-name');
+    const nameBlock = info.querySelector('.name-block');
     const breakdownEl = info.querySelector('.points-breakdown');
-    if (!nameEl || !breakdownEl) return;
+    if (!nameBlock || !breakdownEl) return;
 
     const available = info.clientWidth;
-    const nameW = nameEl.scrollWidth;
+    const nameW = nameBlock.scrollWidth;
     const breakW = breakdownEl.scrollWidth;
 
     if (nameW + breakW + 18 < available) {
