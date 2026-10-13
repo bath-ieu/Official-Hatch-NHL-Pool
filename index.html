@@ -26,7 +26,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== PATTERN D'ÉLÉMENTS PNG (sans chevauchement) ===== */
 .bg-shapes {
   position: fixed;
   inset: 0;
@@ -65,7 +64,6 @@ body {
   z-index: 1;
 }
 
-/* ===== ZONE STICKY ===== */
 .sticky-top {
   position: sticky;
   top: 0;
@@ -182,7 +180,6 @@ h1 {
   width: 100%;
 }
 
-/* ===== PASTILLE ===== */
 .main-pill {
   width: 100%;
   background-color: #ffffff;
@@ -240,7 +237,6 @@ h1 {
 .trend-arrow.down { color: var(--red-arrow); }
 .trend-arrow.same { visibility: hidden; }
 
-/* === LAYOUT NOM + BREAKDOWN === */
 .participant-info {
   display: flex;
   flex-direction: column;
@@ -268,7 +264,8 @@ h1 {
   min-width: 0;
 }
 
-.participant-name {
+/* Nom d'équipe = grand texte rouge (ex-style du participant) */
+.team-name-main {
   font-size: clamp(1.05rem, 2.7vw, 1.65rem);
   font-weight: 700;
   color: var(--accent-red);
@@ -279,7 +276,8 @@ h1 {
   text-overflow: ellipsis;
 }
 
-.team-name {
+/* Nom du participant = petit texte dessous */
+.participant-name-sub {
   font-size: clamp(0.65rem, 1.3vw, 0.82rem);
   font-weight: 500;
   color: var(--border-color);
@@ -398,7 +396,7 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 
     <div class="search-bar">
       <span class="search-icon">🔍</span>
-      <input type="text" id="searchInput" placeholder="Rechercher un participant..." autocomplete="off">
+      <input type="text" id="searchInput" placeholder="Rechercher un participant ou une équipe..." autocomplete="off">
     </div>
     <p class="search-hint">Cliquer sur le nom pour plus de détails</p>
   </div>
@@ -407,7 +405,6 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 </div>
 
 <script>
-/* ===== NOMS D'ÉQUIPE ===== */
 const TEAM_NAMES = {
   "Cédrick Charest": "F* Kreider - Charest",
   "Hak Jun Oh": "Junnie B Johns",
@@ -606,10 +603,11 @@ async function loadPoolData() {
         renderLeaderboard(allParticipants);
         return;
       }
-      const filtered = allParticipants.filter(p => 
-        p.name.toLowerCase().includes(query) ||
-        (TEAM_NAMES[p.name] || '').toLowerCase().includes(query)
-      );
+      const filtered = allParticipants.filter(p => {
+        const nameMatch = p.name.toLowerCase().includes(query);
+        const teamMatch = (TEAM_NAMES[p.name] || '').toLowerCase().includes(query);
+        return nameMatch || teamMatch;
+      });
       renderLeaderboard(filtered);
     });
     
@@ -708,10 +706,7 @@ function renderLeaderboard(list) {
 
     const detailId = index;
     const crownHtml = p.rank === 1 ? '<span class="crown">👑</span>' : '';
-    const teamName = TEAM_NAMES[p.name] || '';
-    const teamHtml = teamName
-      ? '<div class="team-name">Nom d\'équipe: ' + teamName + '</div>'
-      : '';
+    const teamName = TEAM_NAMES[p.name] || p.name;
 
     card.innerHTML = 
       '<div class="main-pill" onclick="toggleDetails(' + detailId + ')">' +
@@ -721,8 +716,8 @@ function renderLeaderboard(list) {
         '</div>' +
         '<div class="participant-info" id="info-' + detailId + '">' +
           '<div class="name-block">' +
-            '<div class="participant-name">' + p.name + '</div>' +
-            teamHtml +
+            '<div class="team-name-main">' + teamName + '</div>' +
+            '<div class="participant-name-sub">' + p.name + '</div>' +
           '</div>' +
           '<div class="points-breakdown">' +
             '<div class="breakdown-item"><span class="breakdown-label">Att</span><span class="breakdown-value">' + (p.att_pts || 0) + '</span></div>' +
