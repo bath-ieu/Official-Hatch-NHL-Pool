@@ -371,7 +371,6 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   white-space: nowrap;
 }
 
-/* Colonnes : Stats 18% à gauche de Points, Points 10% à gauche de Hier */
 .details table {
   table-layout: fixed;
   width: 100%;
@@ -749,7 +748,7 @@ function renderLeaderboard(list) {
       const displayPos = (s.position === 'D') ? 'D' : 'A';
       return '<tr>' +
         '<td><b>' + (s.name || '') + '</b> <span class="badge">' + displayPos + '</span></td>' +
-        '<td>' + (s.goals || 0) + ' B, ' + (s.assists || 0) + ' P</td>' +
+        '<td>' + (s.goals || 0) + ' B / ' + (s.assists || 0) + ' P</td>' +
         '<td><b>' + (s.points || 0) + ' pts</b></td>' +
         '<td>' + formatPtsLast(s.pts_last) + '</td>' +
         '</tr>';
@@ -758,7 +757,7 @@ function renderLeaderboard(list) {
     let goaliesHtml = p.goalies.map(g => {
       return '<tr>' +
         '<td><b>' + (g.name || '') + '</b> <span class="badge">G</span></td>' +
-        '<td>' + (g.wins || 0) + ' V, ' + (g.shutouts || 0) + ' BL, ' + (g.otLosses || 0) + ' DP</td>' +
+        '<td>' + (g.wins || 0) + ' V / ' + (g.shutouts || 0) + ' BL / ' + (g.otLosses || 0) + ' DP</td>' +
         '<td><b>' + (g.points || 0) + ' pts</b></td>' +
         '<td>' + formatPtsLast(g.pts_last) + '</td>' +
         '</tr>';
@@ -767,7 +766,7 @@ function renderLeaderboard(list) {
     let teamsHtml = p.teams.map(t => {
       return '<tr>' +
         '<td><b>' + (t.name || '') + '</b> (' + (t.abbrev || '') + ')</td>' +
-        '<td>' + (t.reg_wins || 0) + ' VR, ' + (t.ot_wins || 0) + ' VP, ' + (t.ot_losses || 0) + ' DP</td>' +
+        '<td>' + (t.reg_wins || 0) + ' VR / ' + (t.ot_wins || 0) + ' VP / ' + (t.ot_losses || 0) + ' DP</td>' +
         '<td><b>' + (t.points || 0) + ' pts</b></td>' +
         '<td>' + formatPtsLast(t.pts_last) + '</td>' +
         '</tr>';
