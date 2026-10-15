@@ -371,6 +371,34 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   white-space: nowrap;
 }
 
+/* Alignement des colonnes entre les 3 tableaux */
+.details table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.details th:nth-child(1),
+.details td:nth-child(1) {
+  width: 38%;
+}
+
+.details th:nth-child(2),
+.details td:nth-child(2) {
+  width: 32%;
+}
+
+.details th:nth-child(3),
+.details td:nth-child(3) {
+  width: 15%;
+  text-align: right;
+}
+
+.details th:nth-child(4),
+.details td:nth-child(4) {
+  width: 15%;
+  text-align: right;
+}
+
 @media (max-width: 520px) {
   .main-pill { padding: 6px 10px; min-height: 62px; }
   .points-breakdown { gap: 8px; }
@@ -378,6 +406,21 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   .brand-block { width: 65%; }
   .sticky-top { padding: 6px 12px 6px 12px; }
   .bg-shape { opacity: 0.04; }
+
+  .details th:nth-child(1),
+  .details td:nth-child(1) {
+    width: 34%;
+  }
+  .details th:nth-child(2),
+  .details td:nth-child(2) {
+    width: 28%;
+  }
+  .details th:nth-child(3),
+  .details td:nth-child(3),
+  .details th:nth-child(4),
+  .details td:nth-child(4) {
+    width: 19%;
+  }
 }
 </style>
 </head>
