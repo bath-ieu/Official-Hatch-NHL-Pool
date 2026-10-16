@@ -70,7 +70,7 @@ body {
   z-index: 100;
   background: linear-gradient(180deg, #ffffff 0%, #d1d5db 50%, #9ca3af 100%);
   background-attachment: fixed;
-  padding: 8px 15px 8px 15px;
+  padding: 8px 15px 6px 15px;
   margin: 0 -15px;
   box-shadow: 0 1px 8px rgba(0,0,0,0.04);
 }
@@ -82,6 +82,41 @@ body {
   justify-content: center;
   margin-bottom: 4px;
   width: 100%;
+  position: relative;
+}
+
+/* Style des boutons */
+.view-btn {
+  font-family: inherit;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1.5px solid #94a3b8;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+  line-height: 1.25;
+  z-index: 5;
+}
+
+.view-btn:hover {
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+}
+
+.view-btn.active {
+  background: #e8edf2;
+  color: var(--text-dark);
+  border-color: #94a3b8;
+}
+
+.view-btn.active:hover {
+  background: #dde4eb;
+  border-color: #64748b;
+  color: var(--text-dark);
 }
 
 .brand-block {
@@ -121,10 +156,19 @@ h1 {
   min-height: 1em;
 }
 
+/* Zone alignant la barre de recherche et les boutons à la même hauteur */
+.search-and-buttons-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
 .search-bar {
   width: 100%;
   max-width: 380px;
-  margin: 0 auto 4px auto;
   position: relative;
 }
 
@@ -158,6 +202,16 @@ h1 {
   font-size: 1rem;
   pointer-events: none;
   opacity: 0.55;
+}
+
+.search-and-buttons-row #btnGeneral {
+  position: absolute;
+  left: 0;
+}
+
+.search-and-buttons-row #btnAdvanced {
+  position: absolute;
+  right: 0;
 }
 
 .search-hint {
@@ -251,18 +305,10 @@ h1 {
   gap: clamp(16px, 2.8vw, 32px);
 }
 
-.participant-info.wide .name-block {
-  flex-shrink: 0;
-}
+.participant-info.wide .name-block { flex-shrink: 0; }
+.participant-info.wide .points-breakdown { flex-grow: 1; justify-content: flex-start; }
 
-.participant-info.wide .points-breakdown {
-  flex-grow: 1;
-  justify-content: flex-start;
-}
-
-.name-block {
-  min-width: 0;
-}
+.name-block { min-width: 0; }
 
 .team-name-main {
   font-size: clamp(1.05rem, 2.7vw, 1.65rem);
@@ -371,59 +417,158 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   white-space: nowrap;
 }
 
-.details table {
-  table-layout: fixed;
+.details table { table-layout: fixed; width: 100%; }
+.details th:nth-child(1), .details td:nth-child(1) { width: 60%; text-align: left; }
+.details th:nth-child(2), .details td:nth-child(2) { width: 18%; text-align: right; }
+.details th:nth-child(3), .details td:nth-child(3) { width: 10%; text-align: right; }
+.details th:nth-child(4), .details td:nth-child(4) { width: 12%; text-align: center; }
+
+/* ===== Top 5 empilés ===== */
+#advancedView { display: none; padding-top: 8px; }
+
+.adv-section {
+  width: 100%;
+  background: #ffffff;
+  border: 2.5px solid var(--border-color);
+  border-radius: 16px;
+  padding: 14px 12px 16px 12px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+}
+
+.adv-section-title {
+  text-align: left;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin: 0 0 12px 2px;
+  letter-spacing: 0.02em;
+}
+
+.adv-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.adv-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.adv-row::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.adv-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 0 110px;
+  min-width: 110px;
+  padding: 0;
+  background: transparent;
+}
+
+/* Titres de classement en rouge */
+.adv-rank {
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: var(--accent-red);
+  margin-bottom: 2px;
+}
+
+.adv-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 6px;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.adv-name {
+  font-size: clamp(0.7rem, 1.4vw, 0.82rem);
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.adv-team-logo {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
+}
+
+.adv-photo {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: top center;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  display: block;
+}
+
+/* Statistiques des joueurs avec la même couleur gris que les bordures */
+.adv-stat {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--border-color);
+  line-height: 1.2;
+}
+
+.adv-empty {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  padding: 12px 8px;
   width: 100%;
 }
 
-.details th:nth-child(1),
-.details td:nth-child(1) {
-  width: 60%;
-  text-align: left;
-}
+@media (max-width: 680px) {
+  .search-and-buttons-row {
+    flex-direction: column;
+    gap: 8px;
+  }
 
-.details th:nth-child(2),
-.details td:nth-child(2) {
-  width: 18%;
-  text-align: right;
-}
+  .search-and-buttons-row #btnGeneral,
+  .search-and-buttons-row #btnAdvanced {
+    position: static;
+  }
 
-.details th:nth-child(3),
-.details td:nth-child(3) {
-  width: 10%;
-  text-align: right;
-}
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
 
-.details th:nth-child(4),
-.details td:nth-child(4) {
-  width: 12%;
-  text-align: center;
-}
-
-@media (max-width: 520px) {
   .main-pill { padding: 6px 10px; min-height: 62px; }
   .points-breakdown { gap: 8px; }
   h1 { margin-top: -16px; }
-  .brand-block { width: 65%; }
-  .sticky-top { padding: 6px 12px 6px 12px; }
   .bg-shape { opacity: 0.04; }
-
-  .details th:nth-child(1),
-  .details td:nth-child(1) {
-    width: 48%;
-  }
-  .details th:nth-child(2),
-  .details td:nth-child(2) {
-    width: 20%;
-  }
-  .details th:nth-child(3),
-  .details td:nth-child(3) {
-    width: 14%;
-  }
-  .details th:nth-child(4),
-  .details td:nth-child(4) {
-    width: 18%;
-  }
+  .details th:nth-child(1), .details td:nth-child(1) { width: 48%; }
+  .details th:nth-child(2), .details td:nth-child(2) { width: 20%; }
+  .details th:nth-child(3), .details td:nth-child(3) { width: 14%; }
+  .details th:nth-child(4), .details td:nth-child(4) { width: 18%; }
 }
 </style>
 </head>
@@ -452,14 +597,27 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 
     <p class="last-update" id="lastUpdate">Mise à jour: —</p>
 
-    <div class="search-bar">
-      <span class="search-icon">🔍</span>
-      <input type="text" id="searchInput" placeholder="Rechercher un participant..." autocomplete="off">
+    <div class="search-and-buttons-row">
+      <button type="button" class="view-btn active" id="btnGeneral" onclick="showView('general')">Classement Général</button>
+      
+      <div class="search-bar" id="searchBarWrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Rechercher un participant..." autocomplete="off">
+      </div>
+
+      <button type="button" class="view-btn" id="btnAdvanced" onclick="showView('advanced')">Top 5 des joueurs</button>
     </div>
-    <p class="search-hint">Cliquer sur le nom pour plus de détails</p>
+
+    <p class="search-hint" id="searchHint">Cliquer sur le nom pour plus de détails</p>
   </div>
 
-  <div id="leaderboard">Chargement du classement...</div>
+  <div id="generalView">
+    <div id="leaderboard">Chargement du classement...</div>
+  </div>
+
+  <div id="advancedView">
+    <div id="advStack"></div>
+  </div>
 </div>
 
 <script>
@@ -644,6 +802,63 @@ const TEAM_NAMES = {
 };
 
 let allParticipants = [];
+let allPlayers = [];
+
+function showView(which) {
+  const general = document.getElementById('generalView');
+  const advanced = document.getElementById('advancedView');
+  const btnG = document.getElementById('btnGeneral');
+  const btnA = document.getElementById('btnAdvanced');
+  const searchWrap = document.getElementById('searchBarWrap');
+  const searchHint = document.getElementById('searchHint');
+
+  if (which === 'advanced') {
+    general.style.display = 'none';
+    advanced.style.display = 'block';
+    btnG.classList.remove('active');
+    btnA.classList.add('active');
+    if (searchWrap) searchWrap.style.display = 'none';
+    if (searchHint) searchHint.style.display = 'none';
+    renderAdvancedStats();
+  } else {
+    general.style.display = 'block';
+    advanced.style.display = 'none';
+    btnG.classList.add('active');
+    btnA.classList.remove('active');
+    if (searchWrap) searchWrap.style.display = 'block';
+    if (searchHint) searchHint.style.display = 'block';
+  }
+}
+
+function headshotUrl(id) {
+  if (!id) return '';
+  return 'https://assets.nhle.com/mugs/nhl/latest/' + id + '.png';
+}
+
+function headshotFallback(id) {
+  if (!id) return '';
+  return 'https://cms.nhl.bamgrid.com/images/headshots/current/168x168/' + id + '.jpg';
+}
+
+function teamLogoUrl(abbrev) {
+  if (!abbrev) return '';
+  const a = String(abbrev).toUpperCase();
+  const map = { UTAH: 'UTA' };
+  const code = map[a] || a;
+  return 'https://assets.nhle.com/logos/nhl/svg/' + code + '_light.svg';
+}
+
+function onPhotoError(img, id) {
+  if (!img.dataset.fallbackTried) {
+    img.dataset.fallbackTried = '1';
+    const fb = headshotFallback(id);
+    if (fb) {
+      img.src = fb;
+      return;
+    }
+  }
+  img.style.visibility = 'hidden';
+}
 
 async function loadPoolData() {
   try {
@@ -653,6 +868,7 @@ async function loadPoolData() {
     displayLastUpdate(data.updated_at || data.last_update || null);
 
     allParticipants = compute1224Ranking(data.leaderboard || []);
+    allPlayers = buildPlayerPool(data);
     renderLeaderboard(allParticipants);
     
     document.getElementById('searchInput').addEventListener('input', (e) => {
@@ -677,30 +893,43 @@ async function loadPoolData() {
   }
 }
 
+function buildPlayerPool(data) {
+  if (Array.isArray(data.players) && data.players.length) {
+    return data.players;
+  }
+  const seen = {};
+  (data.leaderboard || []).forEach(p => {
+    (p.skaters || []).forEach(s => {
+      const key = s.id != null ? s.id : s.name;
+      if (key != null && !seen[key]) seen[key] = s;
+    });
+    (p.goalies || []).forEach(g => {
+      const key = g.id != null ? g.id : g.name;
+      if (key != null && !seen[key]) seen[key] = g;
+    });
+  });
+  return Object.values(seen);
+}
+
 function displayLastUpdate(isoString) {
   const el = document.getElementById('lastUpdate');
   if (!el) return;
-
   if (!isoString) {
     el.textContent = 'Mise à jour: —';
     return;
   }
-
   try {
     const date = new Date(isoString);
     if (isNaN(date.getTime())) {
       el.textContent = 'Mise à jour: —';
       return;
     }
-
     const options = { day: 'numeric', month: 'long' };
     const dateStr = date.toLocaleDateString('fr-CA', options);
     const hours = String(date.getHours()).padStart(2, '0');
     const minutes = String(date.getMinutes()).padStart(2, '0');
-    
     el.textContent = 'Mise à jour: ' + dateStr + ' ' + hours + 'h' + minutes;
   } catch (e) {
-    console.error('Erreur date:', e);
     el.textContent = 'Mise à jour: —';
   }
 }
@@ -720,6 +949,126 @@ function compute1224Ranking(leaderboard) {
 function formatPtsLast(pts) {
   if (!pts || pts <= 0) return '';
   return '<span class="pts-last">+' + pts + ' pts</span>';
+}
+
+function topN(list, n, valueFn) {
+  return [...list]
+    .filter(p => valueFn(p) > 0)
+    .sort((a, b) => valueFn(b) - valueFn(a))
+    .slice(0, n);
+}
+
+function isAttacker(p) {
+  const pos = (p.position || '').toUpperCase();
+  return pos !== 'D' && pos !== 'G';
+}
+function isDefender(p) {
+  return (p.position || '').toUpperCase() === 'D';
+}
+function isGoalie(p) {
+  return (p.position || '').toUpperCase() === 'G';
+}
+function isCanadien(p) {
+  return String(p.abbrev || p.team || '').toUpperCase() === 'MTL';
+}
+
+function renderPlayerCard(player, rank, statLabel) {
+  const id = player.id || '';
+  const name = player.name || 'Joueur';
+  const abbrev = player.abbrev || player.team || '';
+  const photo = headshotUrl(id);
+  const logo = teamLogoUrl(abbrev);
+
+  const photoHtml = id
+    ? '<img class="adv-photo" src="' + photo + '" alt="' + name + '" loading="lazy" ' +
+      'onerror="onPhotoError(this, ' + JSON.stringify(String(id)) + ')">'
+    : '';
+
+  const logoHtml = logo
+    ? '<img class="adv-team-logo" src="' + logo + '" alt="' + abbrev + '" loading="lazy" onerror="this.style.display=\'none\'">'
+    : '';
+
+  return (
+    '<div class="adv-player">' +
+      '<div class="adv-rank">#' + rank + '</div>' +
+      '<div class="adv-name-row">' +
+        '<span class="adv-name">' + name + '</span>' +
+        logoHtml +
+      '</div>' +
+      photoHtml +
+      '<div class="adv-stat">' + statLabel + '</div>' +
+    '</div>'
+  );
+}
+
+function renderSection(title, cardsHtml, hideIfEmpty) {
+  if (hideIfEmpty && !cardsHtml) return '';
+  const body = cardsHtml
+    ? '<div class="adv-row">' + cardsHtml + '</div>'
+    : '<div class="adv-empty">Aucune donnée</div>';
+  return (
+    '<section class="adv-section">' +
+      '<h3 class="adv-section-title">' + title + '</h3>' +
+      body +
+    '</section>'
+  );
+}
+
+function renderAdvancedStats() {
+  const container = document.getElementById('advStack');
+  if (!container) return;
+
+  const players = allPlayers || [];
+
+  const lastNight = topN(players, 5, p => p.pts_last || 0);
+  const lastNightHtml = lastNight.map((p, i) =>
+    renderPlayerCard(p, i + 1, '+' + (p.pts_last || 0) + ' pts')
+  ).join('');
+
+  const totalPts = topN(players, 5, p => p.points || 0);
+  const totalPtsHtml = totalPts.map((p, i) =>
+    renderPlayerCard(p, i + 1, (p.points || 0) + ' Pts')
+  ).join('');
+
+  const scorers = topN(players.filter(p => !isGoalie(p)), 5, p => p.goals || 0);
+  const scorersHtml = scorers.map((p, i) =>
+    renderPlayerCard(p, i + 1, (p.goals || 0) + ' Buts')
+  ).join('');
+
+  const assist = topN(players.filter(p => !isGoalie(p)), 5, p => p.assists || 0);
+  const assistHtml = assist.map((p, i) =>
+    renderPlayerCard(p, i + 1, (p.assists || 0) + ' Passes')
+  ).join('');
+
+  const attackers = topN(players.filter(isAttacker), 5, p => p.points || 0);
+  const attackersHtml = attackers.map((p, i) =>
+    renderPlayerCard(p, i + 1, (p.points || 0) + ' Pts')
+  ).join('');
+
+  const defenders = topN(players.filter(isDefender), 5, p => p.points || 0);
+  const defendersHtml = defenders.map((p, i) =>
+    renderPlayerCard(p, i + 1, (p.points || 0) + ' Pts')
+  ).join('');
+
+  const goalies = topN(players.filter(isGoalie), 5, p => p.points || 0);
+  const goaliesHtml = goalies.map((p, i) =>
+    renderPlayerCard(p, i + 1, (p.points || 0) + ' Pts')
+  ).join('');
+
+  const canadiens = topN(players.filter(isCanadien), 5, p => p.points || 0);
+  const canadiensHtml = canadiens.map((p, i) =>
+    renderPlayerCard(p, i + 1, (p.points || 0) + ' Pts')
+  ).join('');
+
+  container.innerHTML =
+    renderSection('Points de la dernière soirée', lastNightHtml, true) +
+    renderSection('Points Totals', totalPtsHtml, false) +
+    renderSection('Meilleurs buteurs', scorersHtml, false) +
+    renderSection('Meilleurs passeurs', assistHtml, false) +
+    renderSection('Meilleurs Attaquants', attackersHtml, false) +
+    renderSection('Meilleurs Défenseurs', defendersHtml, false) +
+    renderSection('Meilleurs Gardiens', goaliesHtml, false) +
+    renderSection('Top 5 Canadiens', canadiensHtml, false);
 }
 
 function renderLeaderboard(list) {
@@ -820,25 +1169,17 @@ function renderLeaderboard(list) {
   });
 
   requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      applyResponsiveLayout();
-    });
+    requestAnimationFrame(() => applyResponsiveLayout());
   });
 }
 
 function applyResponsiveLayout() {
   document.querySelectorAll('.participant-info').forEach(info => {
     info.classList.remove('wide');
-
     const nameBlock = info.querySelector('.name-block');
     const breakdownEl = info.querySelector('.points-breakdown');
     if (!nameBlock || !breakdownEl) return;
-
-    const available = info.clientWidth;
-    const nameW = nameBlock.scrollWidth;
-    const breakW = breakdownEl.scrollWidth;
-
-    if (nameW + breakW + 18 < available) {
+    if (nameBlock.scrollWidth + breakdownEl.scrollWidth + 18 < info.clientWidth) {
       info.classList.add('wide');
     }
   });
@@ -852,9 +1193,7 @@ window.addEventListener('resize', () => {
 
 function toggleDetails(index) {
   const el = document.getElementById('details-' + index);
-  if (el) {
-    el.style.display = (el.style.display === 'block') ? 'none' : 'block';
-  }
+  if (el) el.style.display = (el.style.display === 'block') ? 'none' : 'block';
 }
 
 loadPoolData();
