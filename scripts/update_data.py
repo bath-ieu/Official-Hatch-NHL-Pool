@@ -4,6 +4,7 @@ import urllib.request
 from datetime import datetime
 
 SEASON_ID = "20262027"
+HISTORY_FILE = "history_cache.json"
 
 PARTICIPANTS = [
 {
@@ -1121,15 +1122,17 @@ def load_previous():
     previous_ranks = {}
     previous_player_pts = {}
     previous_team_pts = {}
+    existing_records = {}
 
     if not os.path.exists("data.json"):
-        return previous_ranks, previous_player_pts, previous_team_pts
+        return previous_ranks, previous_player_pts, previous_team_pts, existing_records
 
     try:
         with open("data.json", "r", encoding="utf-8") as f:
             old = json.load(f)
+            existing_records = old.get("stats_records", {})
     except Exception:
-        return previous_ranks, previous_player_pts, previous_team_pts
+        pass
 
     for i, p in enumerate(old.get("leaderboard", []), start=1):
         previous_ranks[p.get("name")] = i
@@ -1149,7 +1152,55 @@ def load_previous():
         if name and name not in previous_player_pts:
             previous_player_pts[name] = pl.get("points", 0)
 
-    return previous_ranks, previous_player_pts, previous_team_pts
+    return previous_ranks, previous_player_pts, previous_team_pts, existing_records
+
+
+def load_history_cache():
+    if os.path.exists(HISTORY_FILE):
+        try:
+            with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {"chart_dates": [], "cumulative_history": {}}
+
+
+def save_history_cache(cache):
+    with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+
+def update_friday_history(leaderboard):
+    now = datetime.now()
+    is_friday = (now.weekday() == 4)
+
+    cache = load_history_cache()
+    chart_dates = cache.get("chart_dates", [])
+    cumulative_history = cache.get("cumulative_history", {})
+
+    friday_label = now.strftime("%d %b")
+
+    if is_friday and (not chart_dates or chart_dates[-1] != friday_label):
+        chart_dates.append(friday_label)
+        for p in leaderboard:
+            name = p.get("name")
+            total = p.get("total_points", 0)
+            if name not in cumulative_history:
+                cumulative_history[name] = []
+            cumulative_history[name].append(total)
+        save_history_cache({"chart_dates": chart_dates, "cumulative_history": cumulative_history})
+
+    for p in leaderboard:
+        name = p.get("name")
+        total = p.get("total_points", 0)
+        user_series = cumulative_history.get(name, [])
+        
+        if not user_series or user_series[-1] != total:
+            p["history"] = user_series + [total]
+        else:
+            p["history"] = user_series
+
+    return chart_dates
 
 
 def with_pts_last(st, previous_player_pts):
@@ -1175,7 +1226,6 @@ def with_team_pts_last(st, previous_team_pts):
 
 
 def parse_player(pid, data):
-    """Extrait les stats de la saison courante (saison régulière NHL uniquement)."""
     first = ""
     last = ""
     if isinstance(data.get("firstName"), dict):
@@ -1198,7 +1248,6 @@ def parse_player(pid, data):
     elif pos_code == "D":
         position = "D"
     else:
-        # C, L, R, W, F, etc. → attaquant
         position = "A"
 
     abbrev = str(
@@ -1211,7 +1260,6 @@ def parse_player(pid, data):
     wins = shutouts = ot_losses = 0
     found = False
 
-    # 1) seasonTotals : saison courante + NHL + saison régulière (gameTypeId 2)
     for st in data.get("seasonTotals") or []:
         if str(st.get("season")) != SEASON_ID:
             continue
@@ -1236,12 +1284,10 @@ def parse_player(pid, data):
         found = True
         break
 
-    # 2) Fallback featuredStats (uniquement si la saison affichée correspond)
     if not found:
         featured = data.get("featuredStats") or {}
         feat_season = str(featured.get("season") or "")
         if feat_season == SEASON_ID:
-            # Structure réelle: featuredStats.regularSeason.subSeason
             reg = featured.get("regularSeason") or {}
             sub = reg.get("subSeason") if isinstance(reg, dict) else None
             if not isinstance(sub, dict) or not sub:
@@ -1259,7 +1305,6 @@ def parse_player(pid, data):
                         points = goals * 3 + assists * 2
                     else:
                         points = goals * 2 + assists * 1
-                found = True
 
     return {
         "id": pid,
@@ -1275,8 +1320,73 @@ def parse_player(pid, data):
     }
 
 
+def update_periodic_records(leaderboard, existing_records):
+    now = datetime.now()
+    current_week_key = now.strftime("%Y-W%V")
+    current_month_key = now.strftime("%Y-%m")
+
+    tracking = existing_records.get("tracking_periods", {})
+    saved_week = tracking.get("week_key")
+    saved_month = tracking.get("month_key")
+    
+    week_scores = tracking.get("week_scores", {})
+    month_scores = tracking.get("month_scores", {})
+
+    # 1. Gestion de la Semaine (Lundi au Dimanche)
+    if saved_week != current_week_key:
+        if week_scores:
+            best_prev_week_user = max(week_scores, key=week_scores.get)
+            prev_week_pts = week_scores[best_prev_week_user]
+            
+            current_best_week = existing_records.get("best_week", {"points": 0})
+            if prev_week_pts > current_best_week.get("points", 0):
+                existing_records["best_week"] = {
+                    "name": best_prev_week_user,
+                    "points": prev_week_pts,
+                    "date": f"Semaine {saved_week}"
+                }
+        week_scores = {}
+        saved_week = current_week_key
+
+    # 2. Gestion du Mois (Mois complet)
+    if saved_month != current_month_key:
+        if month_scores:
+            best_prev_month_user = max(month_scores, key=month_scores.get)
+            prev_month_pts = month_scores[best_prev_month_user]
+            
+            current_best_month = existing_records.get("best_month", {"points": 0})
+            if prev_month_pts > current_best_month.get("points", 0):
+                existing_records["best_month"] = {
+                    "name": best_prev_month_user,
+                    "points": prev_month_pts,
+                    "date": saved_month
+                }
+        month_scores = {}
+        saved_month = current_month_key
+
+    # 3. Accumulation des points du jour
+    for p in leaderboard:
+        name = p.get("name")
+        night_pts = (
+            sum(x.get("pts_last", 0) for x in p.get("skaters", [])) +
+            sum(x.get("pts_last", 0) for x in p.get("goalies", [])) +
+            sum(x.get("pts_last", 0) for x in p.get("teams", []))
+        )
+        week_scores[name] = week_scores.get(name, 0) + night_pts
+        month_scores[name] = month_scores.get(name, 0) + night_pts
+
+    existing_records["tracking_periods"] = {
+        "week_key": saved_week,
+        "week_scores": week_scores,
+        "month_key": saved_month,
+        "month_scores": month_scores
+    }
+
+    return existing_records
+
+
 def main():
-    previous_ranks, previous_player_pts, previous_team_pts = load_previous()
+    previous_ranks, previous_player_pts, previous_team_pts, existing_records = load_previous()
 
     all_skater_ids = set()
     all_goalie_ids = set()
@@ -1307,7 +1417,6 @@ def main():
                 "otLosses": 0,
             }
 
-    # Index standings by team abbreviation (API no longer returns teamId reliably)
     teams_by_abbrev = {}
     try:
         standings = fetch_json("https://api-web.nhle.com/v1/standings/now")
@@ -1342,7 +1451,6 @@ def main():
     except Exception as e:
         print(f"Erreur standings: {e}")
 
-    # Map numeric team IDs used in PARTICIPANTS → stats via TEAM_INFO abbrev
     teams_stats = {}
     for tid in all_team_ids:
         info = TEAM_INFO.get(tid, {"name": f"Équipe {tid}", "abbrev": ""})
@@ -1358,8 +1466,6 @@ def main():
                 "ot_wins": 0,
                 "ot_losses": 0,
             }
-            if abbrev:
-                print(f"Attention: pas de standings pour {abbrev} (id {tid})")
 
     leaderboard = []
 
@@ -1443,12 +1549,51 @@ def main():
 
     for new_rank, p in enumerate(leaderboard, start=1):
         old_rank = previous_ranks.get(p["name"])
-        if old_rank is None or old_rank == new_rank:
+        p["rank"] = new_rank
+        
+        if old_rank is None:
+            p["rank_change"] = 0
             p["trend"] = "same"
-        elif new_rank < old_rank:
-            p["trend"] = "up"
         else:
-            p["trend"] = "down"
+            p["rank_change"] = old_rank - new_rank
+            if old_rank == new_rank:
+                p["trend"] = "same"
+            elif new_rank < old_rank:
+                p["trend"] = "up"
+            else:
+                p["trend"] = "down"
+
+    chart_dates = update_friday_history(leaderboard)
+
+    # Calcul dynamique de la meilleure soirée (best_night)
+    max_night_pts = -1
+    best_night_user = None
+    for p in leaderboard:
+        night_pts = (
+            sum(x.get("pts_last", 0) for x in p.get("skaters", [])) +
+            sum(x.get("pts_last", 0) for x in p.get("goalies", [])) +
+            sum(x.get("pts_last", 0) for x in p.get("teams", []))
+        )
+        if night_pts > max_night_pts:
+            max_night_pts = night_pts
+            best_night_user = p.get("name")
+
+    current_best_night = existing_records.get("best_night", {})
+    if max_night_pts > current_best_night.get("points", 0):
+        current_best_night = {
+            "name": best_night_user,
+            "points": max_night_pts,
+            "date": datetime.now().strftime("%d %b %Y")
+        }
+
+    # Mise à jour des records de Semaine et de Mois via la nouvelle fonction
+    existing_records = update_periodic_records(leaderboard, existing_records)
+
+    stats_records = {
+        "best_night": current_best_night,
+        "best_week": existing_records.get("best_week", {"name": "—", "points": 0, "date": ""}),
+        "best_month": existing_records.get("best_month", {"name": "—", "points": 0, "date": ""})
+    }
 
     seen = {}
     for entry in leaderboard:
@@ -1465,6 +1610,8 @@ def main():
     output = {
         "season": SEASON_ID,
         "updated_at": datetime.now().astimezone().isoformat(),
+        "chart_dates": chart_dates if chart_dates else ["Début"],
+        "stats_records": stats_records,
         "leaderboard": leaderboard,
         "players": players_unique,
     }
