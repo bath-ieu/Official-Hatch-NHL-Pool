@@ -1,11 +1,16 @@
 import json
 import os
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timedelta
 
 SEASON_ID = "20262027"
 HISTORY_FILE = "history_cache.json"
 RECENT_POINTS_FILE = "recent_points.json"
+
+MONTHS_FR = {
+    1: "Jan", 2: "Fév", 3: "Mar", 4: "Avr", 5: "Mai", 6: "Juin",
+    7: "Juil", 8: "Août", 9: "Sep", 10: "Oct", 11: "Nov", 12: "Déc"
+}
 
 PARTICIPANTS = [
 {
@@ -1624,11 +1629,15 @@ def main():
         if "name" in current_best_night and "names" not in current_best_night:
             current_best_night["names"] = [current_best_night["name"]] if current_best_night["name"] else []
 
+        # CALCUL DE LA VEILLE (les matchs ont eu lieu la veille de la mise à jour matinale)
+        yesterday = datetime.now() - timedelta(days=1)
+        yesterday_formatted = f"{yesterday.day} {MONTHS_FR[yesterday.month]} {yesterday.year}"
+
         if max_night_pts > current_best_night.get("points", 0):
             current_best_night = {
                 "names": best_night_users,
                 "points": max_night_pts,
-                "date": datetime.now().strftime("%d %b %Y")
+                "date": yesterday_formatted
             }
         elif max_night_pts == current_best_night.get("points", 0) and max_night_pts > 0:
             for name in best_night_users:
