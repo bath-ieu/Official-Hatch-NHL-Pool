@@ -1,6 +1,6 @@
 {
   "season": "20262027",
-  "updated_at": "2026-11-05T13:26:44.716791+00:00",
+  "updated_at": "2026-11-05T14:58:47.843621+00:00",
   "chart_dates": [
     "30 Oct"
   ],
@@ -161,7 +161,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479343,
@@ -200,7 +200,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484762,
@@ -402,7 +402,7 @@
       "rank": 1,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 61,
+      "pts_last3": 59,
       "history": [
         643,
         764
@@ -544,7 +544,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -583,7 +583,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484873,
@@ -770,7 +770,7 @@
           "reg_wins": 3,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -785,7 +785,7 @@
       "rank": 2,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 59,
+      "pts_last3": 52,
       "history": [
         586,
         713
@@ -875,7 +875,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -927,7 +927,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -940,7 +940,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -1057,7 +1057,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -1168,7 +1168,7 @@
       "rank": 3,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 53,
+      "pts_last3": 44,
       "history": [
         605,
         704
@@ -1206,7 +1206,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -1297,7 +1297,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -1310,7 +1310,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -1518,7 +1518,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -1549,9 +1549,9 @@
         }
       ],
       "rank": 4,
-      "rank_change": 2,
-      "trend": "up",
-      "pts_last3": 60,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 57,
       "history": [
         590,
         704
@@ -1589,7 +1589,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -1693,7 +1693,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -1706,7 +1706,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -1901,7 +1901,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -1932,9 +1932,9 @@
         }
       ],
       "rank": 5,
-      "rank_change": 2,
-      "trend": "up",
-      "pts_last3": 52,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 48,
       "history": [
         596,
         703
@@ -2063,7 +2063,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -2115,7 +2115,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484873,
@@ -2206,7 +2206,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8484145,
@@ -2219,7 +2219,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8482775,
@@ -2315,9 +2315,9 @@
         }
       ],
       "rank": 6,
-      "rank_change": -1,
-      "trend": "down",
-      "pts_last3": 51,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 48,
       "history": [
         588,
         702
@@ -2576,7 +2576,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8482730,
@@ -2589,7 +2589,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -2698,9 +2698,9 @@
         }
       ],
       "rank": 7,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 41,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 38,
       "history": [
         601,
         696
@@ -2842,7 +2842,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8482699,
@@ -2881,7 +2881,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484873,
@@ -2972,7 +2972,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -3068,7 +3068,7 @@
           "reg_wins": 3,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -3081,9 +3081,9 @@
         }
       ],
       "rank": 8,
-      "rank_change": 4,
-      "trend": "up",
-      "pts_last3": 57,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 53,
       "history": [
         584,
         696
@@ -3212,7 +3212,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -3225,7 +3225,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8482699,
@@ -3342,7 +3342,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8482730,
@@ -3355,7 +3355,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477346,
@@ -3464,9 +3464,9 @@
         }
       ],
       "rank": 9,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 50,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 44,
       "history": [
         585,
         695
@@ -3847,9 +3847,9 @@
         }
       ],
       "rank": 10,
-      "rank_change": -6,
-      "trend": "down",
-      "pts_last3": 52,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 46,
       "history": [
         586,
         695
@@ -3939,7 +3939,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -3991,7 +3991,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -4030,7 +4030,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484873,
@@ -4232,7 +4232,7 @@
       "rank": 11,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 52,
+      "pts_last3": 46,
       "history": [
         577,
         694
@@ -4374,7 +4374,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479343,
@@ -4504,7 +4504,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -4613,9 +4613,9 @@
         }
       ],
       "rank": 12,
-      "rank_change": -3,
-      "trend": "down",
-      "pts_last3": 55,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 49,
       "history": [
         581,
         693
@@ -4653,7 +4653,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -4744,7 +4744,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477960,
@@ -4757,7 +4757,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -4887,7 +4887,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8482702,
@@ -4996,9 +4996,9 @@
         }
       ],
       "rank": 13,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 45,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 40,
       "history": [
         591,
         693
@@ -5088,7 +5088,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -5140,7 +5140,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479343,
@@ -5337,7 +5337,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -5379,9 +5379,9 @@
         }
       ],
       "rank": 14,
-      "rank_change": 3,
-      "trend": "up",
-      "pts_last3": 64,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 50,
       "history": [
         576,
         689
@@ -5523,7 +5523,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -5536,7 +5536,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -5764,7 +5764,7 @@
       "rank": 15,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 59,
+      "pts_last3": 50,
       "history": [
         574,
         686
@@ -5893,7 +5893,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -5906,7 +5906,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479343,
@@ -5945,7 +5945,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484984,
@@ -6145,9 +6145,9 @@
         }
       ],
       "rank": 16,
-      "rank_change": 2,
-      "trend": "up",
-      "pts_last3": 41,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 36,
       "history": [
         596,
         684
@@ -6237,7 +6237,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -6528,9 +6528,9 @@
         }
       ],
       "rank": 17,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 50,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 37,
       "history": [
         579,
         683
@@ -6802,7 +6802,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477346,
@@ -6911,9 +6911,9 @@
         }
       ],
       "rank": 18,
-      "rank_change": -2,
-      "trend": "down",
-      "pts_last3": 45,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 41,
       "history": [
         589,
         682
@@ -7003,7 +7003,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -7172,7 +7172,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480064,
@@ -7296,7 +7296,7 @@
       "rank": 19,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 51,
+      "pts_last3": 45,
       "history": [
         575,
         678
@@ -7438,7 +7438,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -7568,7 +7568,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -7677,9 +7677,9 @@
         }
       ],
       "rank": 20,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 41,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 36,
       "history": [
         577,
         677
@@ -7821,7 +7821,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8482699,
@@ -7951,7 +7951,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8481598,
@@ -8018,7 +8018,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -8060,9 +8060,9 @@
         }
       ],
       "rank": 21,
-      "rank_change": 3,
-      "trend": "up",
-      "pts_last3": 53,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 46,
       "history": [
         570,
         675
@@ -8152,7 +8152,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8474600,
@@ -8204,7 +8204,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479343,
@@ -8321,7 +8321,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8482730,
@@ -8334,7 +8334,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -8401,7 +8401,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -8443,9 +8443,9 @@
         }
       ],
       "rank": 22,
-      "rank_change": 9,
-      "trend": "up",
-      "pts_last3": 69,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 62,
       "history": [
         548,
         674
@@ -8600,7 +8600,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -8717,7 +8717,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477346,
@@ -8826,9 +8826,9 @@
         }
       ],
       "rank": 23,
-      "rank_change": -1,
-      "trend": "down",
-      "pts_last3": 49,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 38,
       "history": [
         581,
         673
@@ -8866,7 +8866,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -9209,9 +9209,9 @@
         }
       ],
       "rank": 24,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 49,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 45,
       "history": [
         573,
         673
@@ -9301,7 +9301,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -9353,7 +9353,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479343,
@@ -9550,7 +9550,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -9592,9 +9592,9 @@
         }
       ],
       "rank": 25,
-      "rank_change": 2,
-      "trend": "up",
-      "pts_last3": 49,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 45,
       "history": [
         569,
         672
@@ -9736,7 +9736,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8482699,
@@ -9975,9 +9975,9 @@
         }
       ],
       "rank": 26,
-      "rank_change": -3,
-      "trend": "down",
-      "pts_last3": 57,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 45,
       "history": [
         560,
         672
@@ -10067,7 +10067,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -10119,7 +10119,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -10132,7 +10132,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -10236,7 +10236,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -10358,9 +10358,9 @@
         }
       ],
       "rank": 27,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 51,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 43,
       "history": [
         567,
         671
@@ -10450,7 +10450,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -10502,7 +10502,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -10515,7 +10515,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -10619,7 +10619,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -10710,7 +10710,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -10741,9 +10741,9 @@
         }
       ],
       "rank": 28,
-      "rank_change": 5,
-      "trend": "up",
-      "pts_last3": 51,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 44,
       "history": [
         568,
         670
@@ -10898,7 +10898,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -10924,7 +10924,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484984,
@@ -11002,7 +11002,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8476875,
@@ -11082,7 +11082,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -11124,9 +11124,9 @@
         }
       ],
       "rank": 29,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 46,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 40,
       "history": [
         569,
         669
@@ -11268,7 +11268,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -11507,9 +11507,9 @@
         }
       ],
       "rank": 30,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 54,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 47,
       "history": [
         551,
         667
@@ -11781,7 +11781,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477346,
@@ -11890,9 +11890,9 @@
         }
       ],
       "rank": 31,
-      "rank_change": -6,
-      "trend": "down",
-      "pts_last3": 61,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 53,
       "history": [
         562,
         666
@@ -11982,7 +11982,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -12034,7 +12034,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -12047,7 +12047,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -12151,7 +12151,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -12273,9 +12273,9 @@
         }
       ],
       "rank": 32,
-      "rank_change": 2,
-      "trend": "up",
-      "pts_last3": 58,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 46,
       "history": [
         549,
         664
@@ -12417,7 +12417,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479343,
@@ -12656,9 +12656,9 @@
         }
       ],
       "rank": 33,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 54,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 41,
       "history": [
         548,
         663
@@ -12800,7 +12800,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -12917,7 +12917,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -13039,9 +13039,9 @@
         }
       ],
       "rank": 34,
-      "rank_change": -2,
-      "trend": "down",
-      "pts_last3": 55,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 50,
       "history": [
         551,
         663
@@ -13380,7 +13380,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -13424,7 +13424,7 @@
       "rank": 35,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 49,
+      "pts_last3": 42,
       "history": [
         565,
         659
@@ -13763,7 +13763,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -13805,9 +13805,9 @@
         }
       ],
       "rank": 36,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 49,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 39,
       "history": [
         570,
         657
@@ -13845,7 +13845,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -13897,7 +13897,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -13949,7 +13949,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479343,
@@ -14066,7 +14066,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -14188,9 +14188,9 @@
         }
       ],
       "rank": 37,
-      "rank_change": 5,
-      "trend": "up",
-      "pts_last3": 46,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 39,
       "history": [
         558,
         656
@@ -14280,7 +14280,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -14332,7 +14332,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -14345,7 +14345,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -14449,7 +14449,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -14529,7 +14529,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -14540,7 +14540,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -14571,9 +14571,9 @@
         }
       ],
       "rank": 38,
-      "rank_change": 15,
-      "trend": "up",
-      "pts_last3": 55,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 49,
       "history": [
         552,
         656
@@ -14702,7 +14702,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480865,
@@ -14845,7 +14845,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477346,
@@ -14954,9 +14954,9 @@
         }
       ],
       "rank": 39,
-      "rank_change": -3,
-      "trend": "down",
-      "pts_last3": 55,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 44,
       "history": [
         544,
         656
@@ -15111,7 +15111,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480208,
@@ -15228,7 +15228,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -15337,9 +15337,9 @@
         }
       ],
       "rank": 40,
-      "rank_change": -2,
-      "trend": "down",
-      "pts_last3": 38,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 28,
       "history": [
         569,
         656
@@ -15520,7 +15520,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484984,
@@ -15720,9 +15720,9 @@
         }
       ],
       "rank": 41,
-      "rank_change": -2,
-      "trend": "down",
-      "pts_last3": 46,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 39,
       "history": [
         552,
         655
@@ -15864,7 +15864,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8477447,
@@ -15903,7 +15903,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484873,
@@ -15994,7 +15994,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8481598,
@@ -16061,7 +16061,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -16103,9 +16103,9 @@
         }
       ],
       "rank": 42,
-      "rank_change": 7,
-      "trend": "up",
-      "pts_last3": 52,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 45,
       "history": [
         547,
         654
@@ -16143,7 +16143,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -16260,7 +16260,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480208,
@@ -16390,7 +16390,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8481618,
@@ -16444,7 +16444,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -16486,9 +16486,9 @@
         }
       ],
       "rank": 43,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 48,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 35,
       "history": [
         559,
         653
@@ -16526,7 +16526,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -16617,7 +16617,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -16869,9 +16869,9 @@
         }
       ],
       "rank": 44,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 48,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 43,
       "history": [
         560,
         653
@@ -16909,7 +16909,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -17000,7 +17000,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -17130,7 +17130,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8476454,
@@ -17252,9 +17252,9 @@
         }
       ],
       "rank": 45,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 38,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 30,
       "history": [
         571,
         651
@@ -17344,7 +17344,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8474600,
@@ -17383,7 +17383,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -17396,7 +17396,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -17409,7 +17409,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -17513,7 +17513,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -17593,7 +17593,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -17635,9 +17635,9 @@
         }
       ],
       "rank": 46,
-      "rank_change": 9,
-      "trend": "up",
-      "pts_last3": 61,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 52,
       "history": [
         539,
         651
@@ -17766,7 +17766,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -17896,7 +17896,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -17976,7 +17976,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -18018,9 +18018,9 @@
         }
       ],
       "rank": 47,
-      "rank_change": -2,
-      "trend": "down",
-      "pts_last3": 43,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 40,
       "history": [
         555,
         651
@@ -18058,7 +18058,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -18110,7 +18110,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -18149,7 +18149,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480865,
@@ -18292,7 +18292,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -18401,9 +18401,9 @@
         }
       ],
       "rank": 48,
-      "rank_change": -1,
-      "trend": "down",
-      "pts_last3": 54,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 43,
       "history": [
         547,
         649
@@ -18532,7 +18532,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -18545,7 +18545,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8477447,
@@ -18675,7 +18675,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -18784,9 +18784,9 @@
         }
       ],
       "rank": 49,
-      "rank_change": -1,
-      "trend": "down",
-      "pts_last3": 53,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 45,
       "history": [
         537,
         649
@@ -18915,7 +18915,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -18928,7 +18928,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479343,
@@ -18967,7 +18967,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484873,
@@ -19071,7 +19071,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8482737,
@@ -19167,9 +19167,9 @@
         }
       ],
       "rank": 50,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 42,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 38,
       "history": [
         550,
         648
@@ -19311,7 +19311,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -19350,7 +19350,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484984,
@@ -19550,9 +19550,9 @@
         }
       ],
       "rank": 51,
-      "rank_change": -1,
-      "trend": "down",
-      "pts_last3": 39,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 37,
       "history": [
         552,
         647
@@ -19681,7 +19681,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480865,
@@ -19933,9 +19933,9 @@
         }
       ],
       "rank": 52,
-      "rank_change": -9,
-      "trend": "down",
-      "pts_last3": 39,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 36,
       "history": [
         562,
         647
@@ -20025,7 +20025,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -20077,7 +20077,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -20090,7 +20090,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -20194,7 +20194,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -20274,7 +20274,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -20316,9 +20316,9 @@
         }
       ],
       "rank": 53,
-      "rank_change": 6,
-      "trend": "up",
-      "pts_last3": 54,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 48,
       "history": [
         540,
         645
@@ -20699,9 +20699,9 @@
         }
       ],
       "rank": 54,
-      "rank_change": -8,
-      "trend": "down",
-      "pts_last3": 36,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 32,
       "history": [
         552,
         643
@@ -20739,7 +20739,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -20843,7 +20843,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -20856,7 +20856,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8484153,
@@ -21040,7 +21040,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -21082,9 +21082,9 @@
         }
       ],
       "rank": 55,
-      "rank_change": 2,
-      "trend": "up",
-      "pts_last3": 50,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 43,
       "history": [
         549,
         642
@@ -21265,7 +21265,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484984,
@@ -21465,9 +21465,9 @@
         }
       ],
       "rank": 56,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 44,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 35,
       "history": [
         546,
         642
@@ -21505,7 +21505,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -21557,7 +21557,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -21609,7 +21609,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -21648,7 +21648,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484227,
@@ -21806,7 +21806,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -21817,7 +21817,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -21848,9 +21848,9 @@
         }
       ],
       "rank": 57,
-      "rank_change": 15,
-      "trend": "up",
-      "pts_last3": 60,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 53,
       "history": [
         525,
         640
@@ -22135,7 +22135,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8481618,
@@ -22189,7 +22189,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -22231,9 +22231,9 @@
         }
       ],
       "rank": 58,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 50,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 43,
       "history": [
         530,
         640
@@ -22323,7 +22323,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -22375,7 +22375,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -22388,7 +22388,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -22414,7 +22414,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484984,
@@ -22492,7 +22492,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8482730,
@@ -22505,7 +22505,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8476468,
@@ -22614,9 +22614,9 @@
         }
       ],
       "rank": 59,
-      "rank_change": 7,
-      "trend": "up",
-      "pts_last3": 59,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 47,
       "history": [
         510,
         639
@@ -22706,7 +22706,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478403,
@@ -22797,7 +22797,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484227,
@@ -22993,13 +22993,13 @@
           "reg_wins": 6,
           "ot_wins": 3,
           "ot_losses": 1,
-          "pts_last": 2
+          "pts_last": 0
         }
       ],
       "rank": 60,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 39,
+      "pts_last3": 29,
       "history": [
         551,
         639
@@ -23141,7 +23141,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -23258,7 +23258,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8476875,
@@ -23380,9 +23380,9 @@
         }
       ],
       "rank": 61,
-      "rank_change": 2,
-      "trend": "up",
-      "pts_last3": 54,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 44,
       "history": [
         537,
         638
@@ -23721,7 +23721,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -23763,9 +23763,9 @@
         }
       ],
       "rank": 62,
-      "rank_change": -6,
-      "trend": "down",
-      "pts_last3": 50,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 43,
       "history": [
         541,
         638
@@ -23855,7 +23855,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -23907,7 +23907,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -23920,7 +23920,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -24024,7 +24024,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -24104,7 +24104,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -24115,7 +24115,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -24146,9 +24146,9 @@
         }
       ],
       "rank": 63,
-      "rank_change": 13,
-      "trend": "up",
-      "pts_last3": 52,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 46,
       "history": [
         536,
         637
@@ -24277,7 +24277,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477960,
@@ -24290,7 +24290,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -24420,7 +24420,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -24487,7 +24487,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -24498,7 +24498,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -24529,9 +24529,9 @@
         }
       ],
       "rank": 64,
-      "rank_change": 11,
-      "trend": "up",
-      "pts_last3": 56,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 53,
       "history": [
         537,
         637
@@ -24621,7 +24621,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -24660,7 +24660,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -24673,7 +24673,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -24686,7 +24686,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -24790,7 +24790,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -24870,7 +24870,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -24912,9 +24912,9 @@
         }
       ],
       "rank": 65,
-      "rank_change": 12,
-      "trend": "up",
-      "pts_last3": 56,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 49,
       "history": [
         538,
         635
@@ -25004,7 +25004,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -25056,7 +25056,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -25069,7 +25069,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -25173,7 +25173,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -25253,7 +25253,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -25295,9 +25295,9 @@
         }
       ],
       "rank": 66,
-      "rank_change": 8,
-      "trend": "up",
-      "pts_last3": 57,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 47,
       "history": [
         530,
         635
@@ -25426,7 +25426,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -25556,7 +25556,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8482730,
@@ -25569,7 +25569,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477346,
@@ -25678,9 +25678,9 @@
         }
       ],
       "rank": 67,
-      "rank_change": -5,
-      "trend": "down",
-      "pts_last3": 43,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 35,
       "history": [
         538,
         635
@@ -25718,7 +25718,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -25809,7 +25809,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -26061,9 +26061,9 @@
         }
       ],
       "rank": 68,
-      "rank_change": -7,
-      "trend": "down",
-      "pts_last3": 44,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 39,
       "history": [
         545,
         633
@@ -26192,7 +26192,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -26205,7 +26205,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8477447,
@@ -26322,7 +26322,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8482730,
@@ -26335,7 +26335,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -26444,9 +26444,9 @@
         }
       ],
       "rank": 69,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 52,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 44,
       "history": [
         525,
         632
@@ -26536,7 +26536,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -26588,7 +26588,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -26601,7 +26601,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -26705,7 +26705,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -26785,7 +26785,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -26827,9 +26827,9 @@
         }
       ],
       "rank": 70,
-      "rank_change": 10,
-      "trend": "up",
-      "pts_last3": 57,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 46,
       "history": [
         527,
         632
@@ -26958,7 +26958,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8482093,
@@ -26984,7 +26984,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480208,
@@ -27101,7 +27101,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8482702,
@@ -27210,9 +27210,9 @@
         }
       ],
       "rank": 71,
-      "rank_change": -7,
-      "trend": "down",
-      "pts_last3": 40,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 35,
       "history": [
         536,
         632
@@ -27593,9 +27593,9 @@
         }
       ],
       "rank": 72,
-      "rank_change": -14,
-      "trend": "down",
-      "pts_last3": 52,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 44,
       "history": [
         527,
         631
@@ -27685,7 +27685,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -27737,7 +27737,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -27750,7 +27750,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -27854,7 +27854,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -27934,7 +27934,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -27945,7 +27945,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -27976,9 +27976,9 @@
         }
       ],
       "rank": 73,
-      "rank_change": 18,
-      "trend": "up",
-      "pts_last3": 57,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 49,
       "history": [
         526,
         631
@@ -28133,7 +28133,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8479425,
@@ -28237,7 +28237,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -28328,7 +28328,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -28359,9 +28359,9 @@
         }
       ],
       "rank": 74,
-      "rank_change": -6,
-      "trend": "down",
-      "pts_last3": 62,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 56,
       "history": [
         515,
         630
@@ -28451,7 +28451,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -28503,7 +28503,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -28516,7 +28516,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -28620,7 +28620,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -28700,7 +28700,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -28742,9 +28742,9 @@
         }
       ],
       "rank": 75,
-      "rank_change": 9,
-      "trend": "up",
-      "pts_last3": 61,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 52,
       "history": [
         514,
         630
@@ -28834,7 +28834,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -28886,7 +28886,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -28899,7 +28899,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -29003,7 +29003,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -29083,7 +29083,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -29125,9 +29125,9 @@
         }
       ],
       "rank": 76,
-      "rank_change": 11,
-      "trend": "up",
-      "pts_last3": 57,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 49,
       "history": [
         524,
         629
@@ -29165,7 +29165,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -29508,9 +29508,9 @@
         }
       ],
       "rank": 77,
-      "rank_change": -12,
-      "trend": "down",
-      "pts_last3": 46,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 35,
       "history": [
         538,
         629
@@ -29548,7 +29548,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -29600,7 +29600,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -29652,7 +29652,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -29665,7 +29665,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8483431,
@@ -29691,7 +29691,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484984,
@@ -29769,7 +29769,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -29891,9 +29891,9 @@
         }
       ],
       "rank": 78,
-      "rank_change": 11,
-      "trend": "up",
-      "pts_last3": 54,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 46,
       "history": [
         536,
         629
@@ -30035,7 +30035,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8477447,
@@ -30274,9 +30274,9 @@
         }
       ],
       "rank": 79,
-      "rank_change": -12,
-      "trend": "down",
-      "pts_last3": 45,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 41,
       "history": [
         538,
         629
@@ -30418,7 +30418,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -30431,7 +30431,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -30561,7 +30561,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8481618,
@@ -30657,9 +30657,9 @@
         }
       ],
       "rank": 80,
-      "rank_change": -11,
-      "trend": "down",
-      "pts_last3": 62,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 49,
       "history": [
         511,
         629
@@ -30697,7 +30697,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480027,
@@ -30749,7 +30749,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -30931,7 +30931,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8484145,
@@ -30944,7 +30944,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8482775,
@@ -30998,7 +30998,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -31040,9 +31040,9 @@
         }
       ],
       "rank": 81,
-      "rank_change": 2,
-      "trend": "up",
-      "pts_last3": 53,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 44,
       "history": [
         542,
         629
@@ -31080,7 +31080,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -31171,7 +31171,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -31314,7 +31314,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -31423,9 +31423,9 @@
         }
       ],
       "rank": 82,
-      "rank_change": -11,
-      "trend": "down",
-      "pts_last3": 42,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 33,
       "history": [
         535,
         628
@@ -31463,7 +31463,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -31764,7 +31764,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -31775,7 +31775,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -31806,9 +31806,9 @@
         }
       ],
       "rank": 83,
-      "rank_change": -1,
-      "trend": "down",
-      "pts_last3": 52,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 46,
       "history": [
         520,
         625
@@ -31898,7 +31898,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -32080,7 +32080,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -32185,13 +32185,13 @@
           "reg_wins": 6,
           "ot_wins": 3,
           "ot_losses": 1,
-          "pts_last": 2
+          "pts_last": 0
         }
       ],
       "rank": 84,
-      "rank_change": -6,
-      "trend": "down",
-      "pts_last3": 45,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 41,
       "history": [
         519,
         624
@@ -32333,7 +32333,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8477447,
@@ -32450,7 +32450,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8482730,
@@ -32463,7 +32463,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477346,
@@ -32572,9 +32572,9 @@
         }
       ],
       "rank": 85,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 48,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 45,
       "history": [
         518,
         622
@@ -32955,9 +32955,9 @@
         }
       ],
       "rank": 86,
-      "rank_change": -13,
-      "trend": "down",
-      "pts_last3": 39,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 34,
       "history": [
         526,
         621
@@ -32995,7 +32995,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -33047,7 +33047,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -33086,7 +33086,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -33099,7 +33099,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8482699,
@@ -33338,9 +33338,9 @@
         }
       ],
       "rank": 87,
-      "rank_change": 6,
-      "trend": "up",
-      "pts_last3": 44,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 39,
       "history": [
         536,
         621
@@ -33521,7 +33521,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484984,
@@ -33721,9 +33721,9 @@
         }
       ],
       "rank": 88,
-      "rank_change": -9,
-      "trend": "down",
-      "pts_last3": 48,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 44,
       "history": [
         508,
         621
@@ -33813,7 +33813,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -33865,7 +33865,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -34104,9 +34104,9 @@
         }
       ],
       "rank": 89,
-      "rank_change": -1,
-      "trend": "down",
-      "pts_last3": 64,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 49,
       "history": [
         494,
         620
@@ -34235,7 +34235,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -34261,7 +34261,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8484153,
@@ -34287,7 +34287,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484984,
@@ -34487,9 +34487,9 @@
         }
       ],
       "rank": 90,
-      "rank_change": -5,
-      "trend": "down",
-      "pts_last3": 34,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 31,
       "history": [
         529,
         620
@@ -34579,7 +34579,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -34631,7 +34631,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479343,
@@ -34748,7 +34748,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -34870,9 +34870,9 @@
         }
       ],
       "rank": 91,
-      "rank_change": 5,
-      "trend": "up",
-      "pts_last3": 56,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 47,
       "history": [
         510,
         619
@@ -34962,7 +34962,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478403,
@@ -35253,9 +35253,9 @@
         }
       ],
       "rank": 92,
-      "rank_change": -11,
-      "trend": "down",
-      "pts_last3": 43,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 30,
       "history": [
         530,
         619
@@ -35293,7 +35293,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -35345,7 +35345,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -35397,7 +35397,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -35636,9 +35636,9 @@
         }
       ],
       "rank": 93,
-      "rank_change": 4,
-      "trend": "up",
-      "pts_last3": 48,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 39,
       "history": [
         521,
         619
@@ -35728,7 +35728,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8475913,
@@ -35923,7 +35923,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480074,
@@ -36006,7 +36006,7 @@
           "reg_wins": 3,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Nashville Predators",
@@ -36019,9 +36019,9 @@
         }
       ],
       "rank": 94,
-      "rank_change": -2,
-      "trend": "down",
-      "pts_last3": 50,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 43,
       "history": [
         516,
         618
@@ -36360,7 +36360,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -36402,9 +36402,9 @@
         }
       ],
       "rank": 95,
-      "rank_change": -5,
-      "trend": "down",
-      "pts_last3": 49,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 41,
       "history": [
         521,
         617
@@ -36494,7 +36494,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -36546,7 +36546,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -36559,7 +36559,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8473419,
@@ -36754,7 +36754,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -36785,9 +36785,9 @@
         }
       ],
       "rank": 96,
-      "rank_change": 4,
-      "trend": "up",
-      "pts_last3": 52,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 44,
       "history": [
         523,
         617
@@ -36877,7 +36877,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8474600,
@@ -37126,7 +37126,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -37168,9 +37168,9 @@
         }
       ],
       "rank": 97,
-      "rank_change": 2,
-      "trend": "up",
-      "pts_last3": 63,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 56,
       "history": [
         519,
         616
@@ -37312,7 +37312,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8482699,
@@ -37509,7 +37509,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -37520,7 +37520,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -37551,9 +37551,9 @@
         }
       ],
       "rank": 98,
-      "rank_change": 6,
-      "trend": "up",
-      "pts_last3": 52,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 46,
       "history": [
         516,
         615
@@ -37591,7 +37591,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -37934,9 +37934,9 @@
         }
       ],
       "rank": 99,
-      "rank_change": -5,
-      "trend": "down",
-      "pts_last3": 36,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 28,
       "history": [
         541,
         612
@@ -38313,13 +38313,13 @@
           "reg_wins": 6,
           "ot_wins": 3,
           "ot_losses": 1,
-          "pts_last": 2
+          "pts_last": 0
         }
       ],
       "rank": 100,
-      "rank_change": -5,
-      "trend": "down",
-      "pts_last3": 37,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 30,
       "history": [
         528,
         612
@@ -38357,7 +38357,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -38448,7 +38448,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -38461,7 +38461,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479343,
@@ -38578,7 +38578,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -38658,7 +38658,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -38700,9 +38700,9 @@
         }
       ],
       "rank": 101,
-      "rank_change": 8,
-      "trend": "up",
-      "pts_last3": 54,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 47,
       "history": [
         510,
         611
@@ -38792,7 +38792,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -38844,7 +38844,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -38857,7 +38857,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -38961,7 +38961,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -39041,7 +39041,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -39052,7 +39052,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -39083,9 +39083,9 @@
         }
       ],
       "rank": 102,
-      "rank_change": 17,
-      "trend": "up",
-      "pts_last3": 54,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 47,
       "history": [
         508,
         611
@@ -39123,7 +39123,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -39424,7 +39424,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -39466,9 +39466,9 @@
         }
       ],
       "rank": 103,
-      "rank_change": -1,
-      "trend": "down",
-      "pts_last3": 32,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 30,
       "history": [
         538,
         610
@@ -39597,7 +39597,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480865,
@@ -39727,7 +39727,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -39807,7 +39807,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -39849,9 +39849,9 @@
         }
       ],
       "rank": 104,
-      "rank_change": 2,
-      "trend": "up",
-      "pts_last3": 57,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 53,
       "history": [
         502,
         610
@@ -39941,7 +39941,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480023,
@@ -40032,7 +40032,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484227,
@@ -40232,9 +40232,9 @@
         }
       ],
       "rank": 105,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 49,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 46,
       "history": [
         497,
         609
@@ -40363,7 +40363,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -40615,9 +40615,9 @@
         }
       ],
       "rank": 106,
-      "rank_change": -8,
-      "trend": "down",
-      "pts_last3": 49,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 40,
       "history": [
         513,
         609
@@ -40655,7 +40655,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -40707,7 +40707,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -40746,7 +40746,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8482093,
@@ -40772,7 +40772,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8479425,
@@ -40998,9 +40998,9 @@
         }
       ],
       "rank": 107,
-      "rank_change": -2,
-      "trend": "down",
-      "pts_last3": 41,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 34,
       "history": [
         528,
         609
@@ -41129,7 +41129,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -41142,7 +41142,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -41155,7 +41155,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -41259,7 +41259,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -41381,9 +41381,9 @@
         }
       ],
       "rank": 108,
-      "rank_change": -1,
-      "trend": "down",
-      "pts_last3": 48,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 42,
       "history": [
         514,
         609
@@ -41525,7 +41525,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -41538,7 +41538,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -41764,9 +41764,9 @@
         }
       ],
       "rank": 109,
-      "rank_change": -6,
-      "trend": "down",
-      "pts_last3": 39,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 33,
       "history": [
         516,
         609
@@ -41804,7 +41804,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -41895,7 +41895,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -41908,7 +41908,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -41921,7 +41921,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8484153,
@@ -42051,7 +42051,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8482737,
@@ -42116,7 +42116,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -42147,9 +42147,9 @@
         }
       ],
       "rank": 110,
-      "rank_change": 5,
-      "trend": "up",
-      "pts_last3": 43,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 36,
       "history": [
         512,
         606
@@ -42187,7 +42187,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -42291,7 +42291,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -42532,7 +42532,7 @@
       "rank": 111,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 44,
+      "pts_last3": 39,
       "history": [
         520,
         605
@@ -42687,7 +42687,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -42791,7 +42791,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8482730,
@@ -42804,7 +42804,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8476468,
@@ -42913,9 +42913,9 @@
         }
       ],
       "rank": 112,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 54,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 48,
       "history": [
         496,
         605
@@ -42953,7 +42953,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -43005,7 +43005,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -43044,7 +43044,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476459,
@@ -43070,7 +43070,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -43254,7 +43254,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -43265,7 +43265,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -43296,9 +43296,9 @@
         }
       ],
       "rank": 113,
-      "rank_change": 14,
-      "trend": "up",
-      "pts_last3": 50,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 47,
       "history": [
         518,
         604
@@ -43637,7 +43637,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -43675,13 +43675,13 @@
           "reg_wins": 6,
           "ot_wins": 3,
           "ot_losses": 1,
-          "pts_last": 2
+          "pts_last": 0
         }
       ],
       "rank": 114,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 46,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 39,
       "history": [
         509,
         603
@@ -43836,7 +43836,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8484153,
@@ -43862,7 +43862,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484873,
@@ -43953,7 +43953,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -44062,9 +44062,9 @@
         }
       ],
       "rank": 115,
-      "rank_change": -3,
-      "trend": "down",
-      "pts_last3": 52,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 42,
       "history": [
         496,
         602
@@ -44154,7 +44154,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -44193,7 +44193,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480865,
@@ -44403,7 +44403,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -44445,9 +44445,9 @@
         }
       ],
       "rank": 116,
-      "rank_change": 4,
-      "trend": "up",
-      "pts_last3": 47,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 43,
       "history": [
         516,
         602
@@ -44485,7 +44485,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480027,
@@ -44537,7 +44537,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -44828,9 +44828,9 @@
         }
       ],
       "rank": 117,
-      "rank_change": -3,
-      "trend": "down",
-      "pts_last3": 37,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 35,
       "history": [
         516,
         600
@@ -44868,7 +44868,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -44959,7 +44959,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480865,
@@ -44985,7 +44985,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8484153,
@@ -45211,9 +45211,9 @@
         }
       ],
       "rank": 118,
-      "rank_change": -5,
-      "trend": "down",
-      "pts_last3": 52,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 48,
       "history": [
         503,
         600
@@ -45251,7 +45251,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -45303,7 +45303,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478403,
@@ -45563,7 +45563,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -45594,9 +45594,9 @@
         }
       ],
       "rank": 119,
-      "rank_change": 2,
-      "trend": "up",
-      "pts_last3": 43,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 40,
       "history": [
         508,
         599
@@ -45634,7 +45634,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -45855,7 +45855,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -45935,7 +45935,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -45977,9 +45977,9 @@
         }
       ],
       "rank": 120,
-      "rank_change": 6,
-      "trend": "up",
-      "pts_last3": 51,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 45,
       "history": [
         507,
         598
@@ -46017,7 +46017,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -46069,7 +46069,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -46108,7 +46108,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -46134,7 +46134,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8484153,
@@ -46318,7 +46318,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -46329,7 +46329,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -46360,9 +46360,9 @@
         }
       ],
       "rank": 121,
-      "rank_change": 12,
-      "trend": "up",
-      "pts_last3": 44,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 40,
       "history": [
         523,
         598
@@ -46400,7 +46400,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -46517,7 +46517,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -46621,7 +46621,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -46743,9 +46743,9 @@
         }
       ],
       "rank": 122,
-      "rank_change": -5,
-      "trend": "down",
-      "pts_last3": 47,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 41,
       "history": [
         510,
         598
@@ -46783,7 +46783,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -46835,7 +46835,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8474600,
@@ -47126,9 +47126,9 @@
         }
       ],
       "rank": 123,
-      "rank_change": -7,
-      "trend": "down",
-      "pts_last3": 46,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 38,
       "history": [
         516,
         598
@@ -47166,7 +47166,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480027,
@@ -47257,7 +47257,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -47487,7 +47487,7 @@
           "reg_wins": 8,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -47511,7 +47511,7 @@
       "rank": 124,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 38,
+      "pts_last3": 35,
       "history": [
         529,
         597
@@ -47666,7 +47666,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8483431,
@@ -47879,7 +47879,7 @@
           "reg_wins": 3,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Calgary Flames",
@@ -47888,13 +47888,13 @@
           "reg_wins": 7,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 1
+          "pts_last": 0
         }
       ],
       "rank": 125,
-      "rank_change": -3,
-      "trend": "down",
-      "pts_last3": 42,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 34,
       "history": [
         505,
         596
@@ -47932,7 +47932,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -48023,7 +48023,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -48036,7 +48036,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479343,
@@ -48275,9 +48275,9 @@
         }
       ],
       "rank": 126,
-      "rank_change": 2,
-      "trend": "up",
-      "pts_last3": 50,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 45,
       "history": [
         497,
         596
@@ -48536,7 +48536,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -48658,9 +48658,9 @@
         }
       ],
       "rank": 127,
-      "rank_change": -9,
-      "trend": "down",
-      "pts_last3": 54,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 49,
       "history": [
         486,
         595
@@ -48789,7 +48789,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -48919,7 +48919,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8476875,
@@ -49041,9 +49041,9 @@
         }
       ],
       "rank": 128,
-      "rank_change": -5,
-      "trend": "down",
-      "pts_last3": 31,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 23,
       "history": [
         521,
         594
@@ -49081,7 +49081,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -49172,7 +49172,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -49198,7 +49198,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8484153,
@@ -49224,7 +49224,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484984,
@@ -49424,9 +49424,9 @@
         }
       ],
       "rank": 129,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 35,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 27,
       "history": [
         510,
         594
@@ -49794,7 +49794,7 @@
           "reg_wins": 3,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -49807,9 +49807,9 @@
         }
       ],
       "rank": 130,
-      "rank_change": -5,
-      "trend": "down",
-      "pts_last3": 42,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 36,
       "history": [
         514,
         594
@@ -49847,7 +49847,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -49899,7 +49899,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -49938,7 +49938,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -49951,7 +49951,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -49990,7 +49990,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484227,
@@ -50068,7 +50068,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -50159,7 +50159,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -50190,9 +50190,9 @@
         }
       ],
       "rank": 131,
-      "rank_change": 12,
-      "trend": "up",
-      "pts_last3": 52,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 47,
       "history": [
         482,
         593
@@ -50230,7 +50230,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -50321,7 +50321,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -50347,7 +50347,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8483431,
@@ -50477,7 +50477,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8481618,
@@ -50575,7 +50575,7 @@
       "rank": 132,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 31,
+      "pts_last3": 26,
       "history": [
         522,
         591
@@ -50665,7 +50665,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -50956,9 +50956,9 @@
         }
       ],
       "rank": 133,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 37,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 28,
       "history": [
         513,
         590
@@ -50996,7 +50996,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -51048,7 +51048,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -51087,7 +51087,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -51113,7 +51113,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -51339,9 +51339,9 @@
         }
       ],
       "rank": 134,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 44,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 35,
       "history": [
         506,
         590
@@ -51483,7 +51483,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "id": 8475786,
@@ -51626,7 +51626,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8482775,
@@ -51722,9 +51722,9 @@
         }
       ],
       "rank": 135,
-      "rank_change": 2,
-      "trend": "up",
-      "pts_last3": 52,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 43,
       "history": [
         493,
         589
@@ -51866,7 +51866,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -52105,9 +52105,9 @@
         }
       ],
       "rank": 136,
-      "rank_change": -2,
-      "trend": "down",
-      "pts_last3": 41,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 34,
       "history": [
         498,
         589
@@ -52145,7 +52145,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -52197,7 +52197,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478403,
@@ -52262,7 +52262,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8484153,
@@ -52366,7 +52366,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -52488,9 +52488,9 @@
         }
       ],
       "rank": 137,
-      "rank_change": -1,
-      "trend": "down",
-      "pts_last3": 51,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 46,
       "history": [
         503,
         589
@@ -52528,7 +52528,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -52871,9 +52871,9 @@
         }
       ],
       "rank": 138,
-      "rank_change": -7,
-      "trend": "down",
-      "pts_last3": 38,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 35,
       "history": [
         510,
         588
@@ -53002,7 +53002,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480865,
@@ -53028,7 +53028,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8473419,
@@ -53145,7 +53145,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8476468,
@@ -53241,7 +53241,7 @@
           "reg_wins": 3,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -53254,9 +53254,9 @@
         }
       ],
       "rank": 139,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 44,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 39,
       "history": [
         510,
         585
@@ -53294,7 +53294,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -53528,7 +53528,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -53637,9 +53637,9 @@
         }
       ],
       "rank": 140,
-      "rank_change": -1,
-      "trend": "down",
-      "pts_last3": 29,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 23,
       "history": [
         504,
         584
@@ -53677,7 +53677,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -53729,7 +53729,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -53781,7 +53781,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8482699,
@@ -54020,9 +54020,9 @@
         }
       ],
       "rank": 141,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 39,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 33,
       "history": [
         507,
         584
@@ -54403,9 +54403,9 @@
         }
       ],
       "rank": 142,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 46,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 38,
       "history": [
         487,
         581
@@ -54534,7 +54534,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -54560,7 +54560,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480208,
@@ -54786,9 +54786,9 @@
         }
       ],
       "rank": 143,
-      "rank_change": -2,
-      "trend": "down",
-      "pts_last3": 36,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 29,
       "history": [
         497,
         579
@@ -54917,7 +54917,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480865,
@@ -54943,7 +54943,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -55171,7 +55171,7 @@
       "rank": 144,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 32,
+      "pts_last3": 25,
       "history": [
         490,
         577
@@ -55313,7 +55313,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479343,
@@ -55430,7 +55430,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -55510,7 +55510,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -55552,9 +55552,9 @@
         }
       ],
       "rank": 145,
-      "rank_change": 4,
-      "trend": "up",
-      "pts_last3": 60,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 53,
       "history": [
         466,
         575
@@ -55644,7 +55644,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -55683,7 +55683,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8477933,
@@ -55696,7 +55696,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -55709,7 +55709,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -55935,9 +55935,9 @@
         }
       ],
       "rank": 146,
-      "rank_change": 4,
-      "trend": "up",
-      "pts_last3": 43,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 38,
       "history": [
         491,
         575
@@ -55975,7 +55975,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -56066,7 +56066,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8482093,
@@ -56209,7 +56209,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480002,
@@ -56276,7 +56276,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -56318,9 +56318,9 @@
         }
       ],
       "rank": 147,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 40,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 38,
       "history": [
         492,
         575
@@ -56449,7 +56449,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -56701,9 +56701,9 @@
         }
       ],
       "rank": 148,
-      "rank_change": -3,
-      "trend": "down",
-      "pts_last3": 32,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 27,
       "history": [
         494,
         573
@@ -56858,7 +56858,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8473419,
@@ -56884,7 +56884,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484762,
@@ -56988,7 +56988,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480074,
@@ -57084,9 +57084,9 @@
         }
       ],
       "rank": 149,
-      "rank_change": -2,
-      "trend": "down",
-      "pts_last3": 35,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 32,
       "history": [
         491,
         572
@@ -57228,7 +57228,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -57241,7 +57241,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -57463,13 +57463,13 @@
           "reg_wins": 6,
           "ot_wins": 3,
           "ot_losses": 1,
-          "pts_last": 2
+          "pts_last": 0
         }
       ],
       "rank": 150,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 39,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 36,
       "history": [
         487,
         571
@@ -57507,7 +57507,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -57559,7 +57559,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -57598,7 +57598,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -57624,7 +57624,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8484153,
@@ -57728,7 +57728,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8476454,
@@ -57754,7 +57754,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8482737,
@@ -57850,9 +57850,9 @@
         }
       ],
       "rank": 151,
-      "rank_change": 3,
-      "trend": "up",
-      "pts_last3": 41,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 34,
       "history": [
         488,
         571
@@ -57942,7 +57942,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478403,
@@ -58233,9 +58233,9 @@
         }
       ],
       "rank": 152,
-      "rank_change": -6,
-      "trend": "down",
-      "pts_last3": 32,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 28,
       "history": [
         501,
         571
@@ -58507,7 +58507,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8481598,
@@ -58612,13 +58612,13 @@
           "reg_wins": 7,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 1
+          "pts_last": 0
         }
       ],
       "rank": 153,
-      "rank_change": -1,
-      "trend": "down",
-      "pts_last3": 34,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 28,
       "history": [
         495,
         567
@@ -58708,7 +58708,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -58760,7 +58760,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8479314,
@@ -58773,7 +58773,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -58877,7 +58877,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -58999,9 +58999,9 @@
         }
       ],
       "rank": 154,
-      "rank_change": 5,
-      "trend": "up",
-      "pts_last3": 49,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 44,
       "history": [
         477,
         566
@@ -59156,7 +59156,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8473419,
@@ -59182,7 +59182,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "id": 8484984,
@@ -59260,7 +59260,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8475168,
@@ -59369,7 +59369,7 @@
           "reg_wins": 3,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -59382,9 +59382,9 @@
         }
       ],
       "rank": 155,
-      "rank_change": 6,
-      "trend": "up",
-      "pts_last3": 43,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 37,
       "history": [
         487,
         564
@@ -59656,7 +59656,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8484145,
@@ -59669,7 +59669,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8481618,
@@ -59761,13 +59761,13 @@
           "reg_wins": 6,
           "ot_wins": 3,
           "ot_losses": 1,
-          "pts_last": 2
+          "pts_last": 0
         }
       ],
       "rank": 156,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 52,
+      "pts_last3": 42,
       "history": [
         460,
         564
@@ -60148,9 +60148,9 @@
         }
       ],
       "rank": 157,
-      "rank_change": -4,
-      "trend": "down",
-      "pts_last3": 48,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 39,
       "history": [
         480,
         563
@@ -60279,7 +60279,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480865,
@@ -60305,7 +60305,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480208,
@@ -60518,7 +60518,7 @@
           "reg_wins": 3,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -60533,7 +60533,7 @@
       "rank": 158,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 32,
+      "pts_last3": 23,
       "history": [
         488,
         561
@@ -60571,7 +60571,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -60662,7 +60662,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -60688,7 +60688,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8473419,
@@ -60818,7 +60818,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8481618,
@@ -60914,9 +60914,9 @@
         }
       ],
       "rank": 159,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 25,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 23,
       "history": [
         501,
         560
@@ -61297,9 +61297,9 @@
         }
       ],
       "rank": 160,
-      "rank_change": -5,
-      "trend": "down",
-      "pts_last3": 35,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 33,
       "history": [
         483,
         560
@@ -61337,7 +61337,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478864,
@@ -61389,7 +61389,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478420,
@@ -61441,7 +61441,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "id": 8482699,
@@ -61558,7 +61558,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480064,
@@ -61676,13 +61676,13 @@
           "reg_wins": 6,
           "ot_wins": 3,
           "ot_losses": 1,
-          "pts_last": 2
+          "pts_last": 0
         }
       ],
       "rank": 161,
-      "rank_change": 4,
-      "trend": "up",
-      "pts_last3": 41,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 38,
       "history": [
         483,
         560
@@ -61720,7 +61720,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -61811,7 +61811,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8482093,
@@ -61837,7 +61837,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8473419,
@@ -62032,7 +62032,7 @@
           "reg_wins": 7,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -62050,7 +62050,7 @@
           "reg_wins": 3,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Seattle Kraken",
@@ -62059,13 +62059,13 @@
           "reg_wins": 6,
           "ot_wins": 3,
           "ot_losses": 1,
-          "pts_last": 2
+          "pts_last": 0
         }
       ],
       "rank": 162,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 29,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 25,
       "history": [
         502,
         558
@@ -62446,9 +62446,9 @@
         }
       ],
       "rank": 163,
-      "rank_change": -6,
-      "trend": "down",
-      "pts_last3": 41,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 35,
       "history": [
         482,
         557
@@ -62486,7 +62486,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480027,
@@ -62538,7 +62538,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8474600,
@@ -62577,7 +62577,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -62787,7 +62787,7 @@
           "wins": 4,
           "shutouts": 1,
           "otLosses": 1,
-          "pts_last": 4
+          "pts_last": 0
         }
       ],
       "teams": [
@@ -62831,7 +62831,7 @@
       "rank": 164,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 48,
+      "pts_last3": 47,
       "history": [
         471,
         554
@@ -62869,7 +62869,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480027,
@@ -63090,7 +63090,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8476875,
@@ -63116,7 +63116,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8482737,
@@ -63212,8 +63212,8 @@
         }
       ],
       "rank": 165,
-      "rank_change": -3,
-      "trend": "down",
+      "rank_change": 0,
+      "trend": "same",
       "pts_last3": 43,
       "history": [
         462,
@@ -63343,7 +63343,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480865,
@@ -63369,7 +63369,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -63582,7 +63582,7 @@
           "reg_wins": 3,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -63595,9 +63595,9 @@
         }
       ],
       "rank": 166,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 36,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 32,
       "history": [
         481,
         547
@@ -63635,7 +63635,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -63739,7 +63739,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "id": 8483445,
@@ -63856,7 +63856,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478010,
@@ -63978,9 +63978,9 @@
         }
       ],
       "rank": 167,
-      "rank_change": 3,
-      "trend": "up",
-      "pts_last3": 51,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 47,
       "history": [
         455,
         547
@@ -64018,7 +64018,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8477956,
@@ -64122,7 +64122,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8482699,
@@ -64265,7 +64265,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8481618,
@@ -64363,7 +64363,7 @@
       "rank": 168,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 43,
+      "pts_last3": 36,
       "history": [
         466,
         546
@@ -64492,7 +64492,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8478427,
@@ -64744,9 +64744,9 @@
         }
       ],
       "rank": 169,
-      "rank_change": -3,
-      "trend": "down",
-      "pts_last3": 28,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 20,
       "history": [
         474,
         545
@@ -64784,7 +64784,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -64836,7 +64836,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -65127,9 +65127,9 @@
         }
       ],
       "rank": 170,
-      "rank_change": 1,
-      "trend": "up",
-      "pts_last3": 46,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 41,
       "history": [
         447,
         539
@@ -65510,9 +65510,9 @@
         }
       ],
       "rank": 171,
-      "rank_change": -2,
-      "trend": "down",
-      "pts_last3": 35,
+      "rank_change": 0,
+      "trend": "same",
+      "pts_last3": 31,
       "history": [
         470,
         539
@@ -65602,7 +65602,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8478403,
@@ -65641,7 +65641,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8480865,
@@ -65667,7 +65667,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -65797,7 +65797,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8481618,
@@ -65880,7 +65880,7 @@
           "reg_wins": 3,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -65895,7 +65895,7 @@
       "rank": 172,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 43,
+      "pts_last3": 32,
       "history": [
         462,
         537
@@ -65933,7 +65933,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -65985,7 +65985,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -66050,7 +66050,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476887,
@@ -66278,7 +66278,7 @@
       "rank": 173,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 34,
+      "pts_last3": 33,
       "history": [
         470,
         531
@@ -66563,7 +66563,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8481618,
@@ -66661,7 +66661,7 @@
       "rank": 174,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 31,
+      "pts_last3": 30,
       "history": [
         451,
         522
@@ -66751,7 +66751,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -66816,7 +66816,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8484153,
@@ -66920,7 +66920,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8476875,
@@ -67044,7 +67044,7 @@
       "rank": 175,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 32,
+      "pts_last3": 25,
       "history": [
         447,
         517
@@ -67082,7 +67082,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8480839,
@@ -67134,7 +67134,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "id": 8485366,
@@ -67199,7 +67199,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8473419,
@@ -67412,7 +67412,7 @@
           "reg_wins": 3,
           "ot_wins": 2,
           "ot_losses": 2,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -67427,7 +67427,7 @@
       "rank": 176,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 30,
+      "pts_last3": 28,
       "history": [
         445,
         510
@@ -67517,7 +67517,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 4
+          "pts_last": 0
         },
         {
           "id": 8474600,
@@ -67556,7 +67556,7 @@
           "wins": 0,
           "shutouts": 0,
           "otLosses": 0,
-          "pts_last": 1
+          "pts_last": 0
         },
         {
           "id": 8476459,
@@ -67804,13 +67804,13 @@
           "reg_wins": 6,
           "ot_wins": 3,
           "ot_losses": 1,
-          "pts_last": 2
+          "pts_last": 0
         }
       ],
       "rank": 177,
       "rank_change": 0,
       "trend": "same",
-      "pts_last3": 40,
+      "pts_last3": 38,
       "history": [
         412,
         494
@@ -67946,7 +67946,7 @@
       "wins": 0,
       "shutouts": 0,
       "otLosses": 0,
-      "pts_last": 4
+      "pts_last": 0
     },
     {
       "id": 8479343,
@@ -67985,7 +67985,7 @@
       "wins": 0,
       "shutouts": 0,
       "otLosses": 0,
-      "pts_last": 3
+      "pts_last": 0
     },
     {
       "id": 8484762,
@@ -68375,7 +68375,7 @@
       "wins": 0,
       "shutouts": 0,
       "otLosses": 0,
-      "pts_last": 2
+      "pts_last": 0
     },
     {
       "id": 8479314,
@@ -68388,7 +68388,7 @@
       "wins": 0,
       "shutouts": 0,
       "otLosses": 0,
-      "pts_last": 1
+      "pts_last": 0
     },
     {
       "id": 8476887,
@@ -68505,7 +68505,7 @@
       "wins": 0,
       "shutouts": 0,
       "otLosses": 0,
-      "pts_last": 2
+      "pts_last": 0
     },
     {
       "id": 8484801,
@@ -68518,7 +68518,7 @@
       "wins": 0,
       "shutouts": 0,
       "otLosses": 0,
-      "pts_last": 2
+      "pts_last": 0
     },
     {
       "id": 8481540,
@@ -68557,7 +68557,7 @@
       "wins": 0,
       "shutouts": 0,
       "otLosses": 0,
-      "pts_last": 1
+      "pts_last": 0
     },
     {
       "id": 8475166,
@@ -68687,7 +68687,7 @@
       "wins": 0,
       "shutouts": 0,
       "otLosses": 0,
-      "pts_last": 1
+      "pts_last": 0
     },
     {
       "id": 8478427,
@@ -68713,7 +68713,7 @@
       "wins": 0,
       "shutouts": 0,
       "otLosses": 0,
-      "pts_last": 1
+      "pts_last": 0
     },
     {
       "id": 8475809,
@@ -68778,7 +68778,7 @@
       "wins": 0,
       "shutouts": 0,
       "otLosses": 0,
-      "pts_last": 2
+      "pts_last": 0
     },
     {
       "id": 8482487,
@@ -68960,7 +68960,7 @@
       "wins": 0,
       "shutouts": 0,
       "otLosses": 0,
-      "pts_last": 7
+      "pts_last": 0
     },
     {
       "id": 8482702,
@@ -68999,7 +68999,7 @@
       "wins": 0,
       "shutouts": 0,
       "otLosses": 0,
-      "pts_last": 4
+      "pts_last": 0
     },
     {
       "id": 8483431,
@@ -69051,7 +69051,7 @@
       "wins": 4,
       "shutouts": 1,
       "otLosses": 1,
-      "pts_last": 4
+      "pts_last": 0
     },
     {
       "id": 8482737,
@@ -69454,7 +69454,7 @@
       "wins": 0,
       "shutouts": 0,
       "otLosses": 0,
-      "pts_last": 1
+      "pts_last": 0
     },
     {
       "id": 8478133,
